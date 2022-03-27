@@ -8,6 +8,7 @@ public class Interactable : MonoBehaviour
     public bool isInRange;
     public KeyCode interactKey;
     public UnityEvent interactEvent;
+    public SpriteRenderer sprite;
     void Start()
     {
         
@@ -20,6 +21,7 @@ public class Interactable : MonoBehaviour
         {
             if (Input.GetKeyDown(interactKey))
             {
+                sprite.color = Color.black;
                 interactEvent.Invoke();
             }
         }
@@ -28,6 +30,7 @@ public class Interactable : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            sprite.color = Color.blue;
             isInRange = true;
         }
     }
@@ -35,6 +38,7 @@ public class Interactable : MonoBehaviour
     {
          if (collision.gameObject.CompareTag("Player"))
         {
+            sprite.color = Color.white;
             isInRange = false;
         }
     }
