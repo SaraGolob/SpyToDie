@@ -10,6 +10,7 @@ public class Interactable : MonoBehaviour
     public UnityEvent interactEvent;
     public SpriteRenderer sprite;
     public GameObject popUp;
+    public GameObject door;
 
     void Start()
     {
@@ -50,5 +51,6 @@ public class Interactable : MonoBehaviour
     {
         popUp.SetActive(false);
         sprite.color = Color.green;
+        door.SetActive(false);
     }
 }
