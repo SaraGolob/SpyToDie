@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
-public class PlayerMovement2 : MonoBehaviour
+public class PlayerMovement3 : MonoBehaviour
 {
     public float moveSpeed;
     public Rigidbody2D rigidBody;
@@ -27,7 +27,7 @@ public class PlayerMovement2 : MonoBehaviour
     void FixedUpdate()
     {
         // Movement
-        Vector3Int obstacleMapTile = obstacles.WorldToCell(rigidBody.position + (movement/2) - new Vector2(0, 0.5f));
+        Vector3Int obstacleMapTile = obstacles.WorldToCell(rigidBody.position + (movement / 2) - new Vector2(0, 0.5f));
 
         if (obstacles.GetTile(obstacleMapTile) == null)
         {
@@ -38,7 +38,7 @@ public class PlayerMovement2 : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.red; 
-        Gizmos.DrawSphere(rigidBody.position + (movement/2) - new Vector2(0, 0.5f), 0.2f);
+        Gizmos.color = Color.red;
+        Gizmos.DrawSphere(rigidBody.position + (movement / 2) - new Vector2(0, 0.5f), 0.2f);
     }
 }
