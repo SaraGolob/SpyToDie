@@ -9,6 +9,8 @@ public class Interactable : MonoBehaviour
     public KeyCode interactKey;
     public UnityEvent interactEvent;
     public SpriteRenderer sprite;
+    public GameObject popUp;
+
     void Start()
     {
         
@@ -21,6 +23,7 @@ public class Interactable : MonoBehaviour
         {
             if (Input.GetKeyDown(interactKey))
             {
+                popUp.SetActive(true);
                 sprite.color = Color.black;
                 interactEvent.Invoke();
             }
@@ -41,5 +44,11 @@ public class Interactable : MonoBehaviour
             sprite.color = Color.white;
             isInRange = false;
         }
+    }
+
+    public void PopDown()
+    {
+        popUp.SetActive(false);
+        sprite.color = Color.green;
     }
 }
