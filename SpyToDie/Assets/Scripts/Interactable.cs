@@ -8,9 +8,12 @@ public class Interactable : MonoBehaviour
     public bool isInRange;
     public KeyCode interactKey;
     public UnityEvent interactEvent;
-    public SpriteRenderer sprite;
+    public SpriteRenderer spriteItem;
+    public SpriteRenderer SpriteRendDoor;
+    public Sprite doorSprite;
     public GameObject popUp;
     public GameObject door;
+    public BoxCollider2D doorCollid;
 
     void Start()
     {
@@ -25,7 +28,7 @@ public class Interactable : MonoBehaviour
             if (Input.GetKeyDown(interactKey))
             {
                 popUp.SetActive(true);
-                sprite.color = Color.black;
+                spriteItem.color = Color.black;
                 interactEvent.Invoke();
             }
         }
@@ -34,7 +37,7 @@ public class Interactable : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            sprite.color = Color.blue;
+            spriteItem.color = Color.blue;
             isInRange = true;
         }
     }
@@ -42,7 +45,7 @@ public class Interactable : MonoBehaviour
     {
          if (collision.gameObject.CompareTag("Player"))
         {
-            sprite.color = Color.white;
+            spriteItem.color = Color.white;
             isInRange = false;
         }
     }
@@ -50,7 +53,8 @@ public class Interactable : MonoBehaviour
     public void PopDown()
     {
         popUp.SetActive(false);
-        sprite.color = Color.green;
-        door.SetActive(false);
+        spriteItem .color = Color.green;
+        doorCollid.enabled = false;
+        SpriteRendDoor.sprite = doorSprite;
     }
 }
