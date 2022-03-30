@@ -2601,13 +2601,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1748091744}
     - target: {fileID: 6666719810794951986, guid: eb7531d4942afc9438f8878e2d79a37e, type: 3}
+      propertyPath: doorClosed
+      value: 
+      objectReference: {fileID: 2398694386035660818, guid: dc747d0a3cdf6594f9f275fdd2a48b4b, type: 3}
+    - target: {fileID: 6666719810794951986, guid: eb7531d4942afc9438f8878e2d79a37e, type: 3}
       propertyPath: doorCollid
       value: 
       objectReference: {fileID: 1386411055}
     - target: {fileID: 6666719810794951986, guid: eb7531d4942afc9438f8878e2d79a37e, type: 3}
-      propertyPath: doorSprite
+      propertyPath: doorLocked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6666719810794951986, guid: eb7531d4942afc9438f8878e2d79a37e, type: 3}
+      propertyPath: doorOpened
       value: 
       objectReference: {fileID: 8976018127306389262, guid: dc747d0a3cdf6594f9f275fdd2a48b4b, type: 3}
+    - target: {fileID: 6666719810794951986, guid: eb7531d4942afc9438f8878e2d79a37e, type: 3}
+      propertyPath: doorSprite
+      value: 
+      objectReference: {fileID: 1386411053}
     - target: {fileID: 6666719810794951986, guid: eb7531d4942afc9438f8878e2d79a37e, type: 3}
       propertyPath: spriteItem
       value: 
@@ -2616,6 +2628,14 @@ PrefabInstance:
       propertyPath: SpriteRendDoor
       value: 
       objectReference: {fileID: 1386411053}
+    - target: {fileID: 6666719810794951986, guid: eb7531d4942afc9438f8878e2d79a37e, type: 3}
+      propertyPath: doorSpriteRenderer
+      value: 
+      objectReference: {fileID: 1386411053}
+    - target: {fileID: 6666719810794951986, guid: eb7531d4942afc9438f8878e2d79a37e, type: 3}
+      propertyPath: interactEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb7531d4942afc9438f8878e2d79a37e, type: 3}
 --- !u!1 &1119476222
