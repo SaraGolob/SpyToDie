@@ -9,11 +9,15 @@ public class Interactable : MonoBehaviour
     public KeyCode interactKey;
     public UnityEvent interactEvent;
     public SpriteRenderer spriteItem;
-    public SpriteRenderer SpriteRendDoor;
-    public Sprite doorSprite;
+
+  
     public GameObject popUp;
+    [Header("Door")]
     public GameObject door;
     public BoxCollider2D doorCollid;
+    public SpriteRenderer doorSpriteRenderer;
+    public Sprite doorClosed, doorOpened;
+    public bool doorLocked;
 
     void Start()
     {
@@ -23,6 +27,7 @@ public class Interactable : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        DoorLock();
         if (isInRange)
         {
             if (Input.GetKeyDown(interactKey))
@@ -54,7 +59,20 @@ public class Interactable : MonoBehaviour
     {
         popUp.SetActive(false);
         spriteItem .color = Color.green;
-        doorCollid.enabled = false;
-        SpriteRendDoor.sprite = doorSprite;
+        doorLocked= false;
+       
+    }
+    private void DoorLock()
+    {
+        if (doorLocked)
+        {
+            doorCollid.enabled = true;
+            doorSpriteRenderer.sprite = doorClosed;
+        }
+        else
+        {
+            doorCollid.enabled = false;
+            doorSpriteRenderer.sprite = doorOpened;
+        }
     }
 }

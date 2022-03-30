@@ -29,6 +29,15 @@ public class Player_Movement : MonoBehaviour
         oldLocation = rigidBody2D.position; //save old position
         Vector3Int obstacleMapTile = obstacles.WorldToCell(rigidBody2D.position + (movement / 2) - new Vector2(0, 0.5f));
 
+        PlayerAnimation();
+
+        if (obstacles.GetTile(obstacleMapTile) == null)
+        {
+            rigidBody2D.MovePosition(oldLocation + movementThisFrame); //moves the player
+        }
+    }
+    private void PlayerAnimation()
+    {
         if (movement != Vector2.zero) //animation
         {
             animator.SetBool("isWalking", true);
@@ -38,11 +47,6 @@ public class Player_Movement : MonoBehaviour
         else
         {
             animator.SetBool("isWalking", false);
-        }
-
-        if (obstacles.GetTile(obstacleMapTile) == null)
-        {
-            rigidBody2D.MovePosition(oldLocation + movementThisFrame); //moves the player
         }
     }
 }
