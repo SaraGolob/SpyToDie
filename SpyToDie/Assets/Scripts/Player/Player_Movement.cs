@@ -27,14 +27,14 @@ public class Player_Movement : MonoBehaviour
     {
         movementThisFrame = movement.normalized * movementSpeed * Time.deltaTime; //time.deltatime is time between two fixed updates (frames), movement.normalized normalizes the speed so we always move at the same speed
         oldLocation = rigidBody2D.position; //save old position
-        Vector3Int obstacleMapTile = obstacles.WorldToCell(rigidBody2D.position + (movement / 2) - new Vector2(0, 0.5f));
+        //Vector3Int obstacleMapTile = obstacles.WorldToCell(rigidBody2D.position + (movement / 2) - new Vector2(0, 0.5f));
 
         PlayerAnimation();
 
-        if (obstacles.GetTile(obstacleMapTile) == null)
-        {
+        //if (obstacles.GetTile(obstacleMapTile) == null)
+        //{
             rigidBody2D.MovePosition(oldLocation + movementThisFrame); //moves the player
-        }
+        //}
     }
     private void PlayerAnimation()
     {
