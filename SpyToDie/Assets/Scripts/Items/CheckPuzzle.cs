@@ -7,7 +7,7 @@ public class CheckPuzzle : MonoBehaviour
 {
     public UnityEvent simpleEvent;
     public bool puzzleObject1, puzzleObject2, puzzleObject3, puzzleObject4, puzzleObject5;
-    bool isSolved;
+    public static bool isSolved;
 
     void Update()
     {
@@ -17,7 +17,9 @@ public class CheckPuzzle : MonoBehaviour
         puzzleObject4 = GameObject.Find("PuzzleObject4").GetComponent<LightPuzzle>().isActive;
         puzzleObject5 = GameObject.Find("PuzzleObject5").GetComponent<LightPuzzle>().isActive;
 
-        if (puzzleObject1 && puzzleObject2 && puzzleObject3 && puzzleObject4 && puzzleObject5)
+        isSolved = puzzleObject1 && puzzleObject2 && puzzleObject3 && puzzleObject4 && puzzleObject5;
+
+        if (isSolved)
         {
             simpleEvent.Invoke();
         }

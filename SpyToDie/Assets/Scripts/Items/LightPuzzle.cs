@@ -29,6 +29,9 @@ public class LightPuzzle : MonoBehaviour
 
     public void ChangeState()
     {
-        isActive = !isActive;
+        if (!CheckPuzzle.isSolved)
+        {
+            isActive = !isActive;
+        }
     }
 }
