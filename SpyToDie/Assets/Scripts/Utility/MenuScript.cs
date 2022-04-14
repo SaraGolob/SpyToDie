@@ -13,4 +13,8 @@ public class MenuScript : MonoBehaviour
     {
         Application.Quit();
     }
+    public void BackButton()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
 }
