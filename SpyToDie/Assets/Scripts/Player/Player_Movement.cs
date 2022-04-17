@@ -12,6 +12,7 @@ public class Player_Movement : MonoBehaviour
     [Tooltip("this controlls the speed of the character")] public float movementSpeed;
     [Header("Tilemap")]
     public Tilemap obstacles;
+    bool pauseMovement;
     //[SerializeField] if you want private to show in inspector
     //[HideInInspector] if you want public not to show in inspector
     //[System.Serializable] enums or class to be shown in inspector
@@ -25,16 +26,22 @@ public class Player_Movement : MonoBehaviour
     }
     private void FixedUpdate() //physics (updates at the constant speed)
     {
-        movementThisFrame = movement.normalized * movementSpeed * Time.deltaTime; //time.deltatime is time between two fixed updates (frames), movement.normalized normalizes the speed so we always move at the same speed
-        oldLocation = rigidBody2D.position; //save old position
-        //Vector3Int obstacleMapTile = obstacles.WorldToCell(rigidBody2D.position + (movement / 2) - new Vector2(0, 0.5f));
+        if (!pauseMovement)
+        {
+            movementThisFrame = movement.normalized * movementSpeed * Time.deltaTime; //time.deltatime is time between two fixed updates (frames), movement.normalized normalizes the speed so we always move at the same speed
+            oldLocation = rigidBody2D.position; //save old position
+                                                //Vector3Int obstacleMapTile = obstacles.WorldToCell(rigidBody2D.position + (movement / 2) - new Vector2(0, 0.5f));
 
-        PlayerAnimation();
+            PlayerAnimation();
 
-        //if (obstacles.GetTile(obstacleMapTile) == null)
-        //{
+          
             rigidBody2D.MovePosition(oldLocation + movementThisFrame); //moves the player
-        //}
+                                                                       
+        }
+    }
+    public void PauseMovement()
+    {
+        pauseMovement = !pauseMovement;
     }
     private void PlayerAnimation()
     {
