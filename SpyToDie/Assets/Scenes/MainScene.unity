@@ -802,8 +802,6 @@ CompositeCollider2D:
         Y: 75381619
       - X: -59776161
         Y: 75381612
-      - X: -59776166
-        Y: 75381611
       - X: -59776366
         Y: 75381587
       - X: -62855186
@@ -14707,12 +14705,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 1607481006}
-  currentTime: 10
-  countDown: 1
-  hasLimit: 1
-  timerLimit: 2
-  hasFormat: 1
-  format: 0
+  currentTimeInMinutes: 1
+  currentTime: 2.5
+  endingTime: 0
+  hasPenalty: 0
+  penaltySeconds: 0
 --- !u!4 &1344010473
 Transform:
   m_ObjectHideFlags: 0
