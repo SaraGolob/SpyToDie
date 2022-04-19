@@ -17,14 +17,17 @@ public class NumberDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        display.text = numbersToDisplay.ToString();
-        if (display.text.Length > 3)
+        if (numbersToDisplay != null)
         {
-            limitReached = true;
-        }
-        else
-        {
-            limitReached = false;
+            display.text = numbersToDisplay.ToString();
+            if (display.text.Length > 3)
+            {
+                limitReached = true;
+            }
+            else
+            {
+                limitReached = false;
+            }
         }
     }
     
