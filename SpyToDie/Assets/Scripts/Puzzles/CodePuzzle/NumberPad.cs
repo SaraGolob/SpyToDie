@@ -7,6 +7,7 @@ using UnityEngine.Events;
 
 public class NumberPad : MonoBehaviour
 {
+    public static bool isSolved;
     public Button button;
     public UnityEvent simpleEvent = new UnityEvent();
     // Start is called before the first frame update
@@ -25,6 +26,7 @@ public class NumberPad : MonoBehaviour
     {
         if (NumberDisplay.numbersToDisplay == NumberDisplay.correctAnswer)
         {
+            isSolved = true;
             simpleEvent.Invoke();
         }
 

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using SColor = System.Drawing.Color;
 public class ButtonLogic : MonoBehaviour
 {
-    bool isSolved;
+    public static bool isSolved;
     List<string> enteredColours;
     List<string> correctColours;
     List<SColor> sColours;
