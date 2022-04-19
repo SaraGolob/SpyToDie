@@ -27,10 +27,10 @@ public class ButtonLogic : MonoBehaviour
         enteredColours = new List<string>();
         correctColours = new List<string>
         {
-            BookText.color1.ToUpper(),
-            BookText.color2.ToUpper(),
-            BookText.color3.ToUpper(),
-            BookText.color4.ToUpper()
+            BookText.colour1.ToUpper(),
+            BookText.colour2.ToUpper(),
+            BookText.colour3.ToUpper(),
+            BookText.colour4.ToUpper()
         };
         isSolved = false;
     }
