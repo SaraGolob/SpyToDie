@@ -18,6 +18,7 @@ public class Countdown_Timer : MonoBehaviour
     public bool hasPenalty;
     public float penaltySeconds;
 
+    public static bool timeIsUp;
     void Start()
     {
         if (currentTimeInMinutes) //converts time to seconds in case we input minutes
@@ -35,6 +36,7 @@ public class Countdown_Timer : MonoBehaviour
             SetTimerText();
             timerText.color = Color.red;
             enabled = false;
+            timeIsUp = true;
         }
         SetTimerText();
     }

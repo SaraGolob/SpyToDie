@@ -13,9 +13,9 @@ public class SceneChange : MonoBehaviour
             hasFinished = true;
             SceneManager.LoadScene("EndScreen");
         }
-        //else if (Countdown_Timer.timeIsOut)
-        //{
-            //SceneManager.LoadScene("EndScreen");
-        //}
+        else if (Countdown_Timer.timeIsUp)
+        {
+            SceneManager.LoadScene("EndScreen");
+        }
     }
 }
