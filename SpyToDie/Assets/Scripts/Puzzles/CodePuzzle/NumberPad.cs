@@ -9,6 +9,7 @@ public class NumberPad : MonoBehaviour
 {
     public Button button;
     public UnityEvent simpleEvent = new UnityEvent();
+    public UnityEvent penaltyEvent = new UnityEvent();
     // Start is called before the first frame update
     public void PressButton()
     {
@@ -26,6 +27,10 @@ public class NumberPad : MonoBehaviour
         if (NumberDisplay.numbersToDisplay == NumberDisplay.correctAnswer)
         {
             simpleEvent.Invoke();
+        }
+        else
+        {
+            penaltyEvent.Invoke();
         }
 
     }

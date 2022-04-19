@@ -1838,6 +1838,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  penaltyEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1344010472}
+        m_TargetAssemblyTypeName: Countdown_Timer, Assembly-CSharp
+        m_MethodName: ApplyPenalty
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &149045697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2517,6 +2532,9 @@ MonoBehaviour:
   simpleEvent:
     m_PersistentCalls:
       m_Calls: []
+  penaltyEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &347211533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3035,6 +3053,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 396019061}
   simpleEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  penaltyEvent:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &396019061
@@ -12836,6 +12857,9 @@ MonoBehaviour:
   simpleEvent:
     m_PersistentCalls:
       m_Calls: []
+  penaltyEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &905678335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12984,6 +13008,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 991990621}
   simpleEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  penaltyEvent:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &991990621
@@ -13343,6 +13370,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 1019206513}
   simpleEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  penaltyEvent:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &1019206513
@@ -13802,6 +13832,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 1090020621}
   simpleEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  penaltyEvent:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &1090020621
@@ -14726,8 +14759,8 @@ MonoBehaviour:
   currentTimeInMinutes: 1
   currentTime: 2.5
   endingTime: 0
-  hasPenalty: 0
-  penaltySeconds: 0
+  hasPenalty: 1
+  penaltySeconds: 10
 --- !u!4 &1344010473
 Transform:
   m_ObjectHideFlags: 0
@@ -14796,6 +14829,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 1351018726}
   simpleEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  penaltyEvent:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &1351018726
@@ -15100,6 +15136,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 1484240525}
   simpleEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  penaltyEvent:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &1484240525
@@ -15819,6 +15858,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 1656121691}
   simpleEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  penaltyEvent:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &1656121691
@@ -17812,6 +17854,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 1786949693}
   simpleEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  penaltyEvent:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &1786949693
@@ -21340,6 +21385,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 2107646903}
   simpleEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  penaltyEvent:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &2107646903

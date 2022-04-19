@@ -46,36 +46,20 @@ public class Countdown_Timer : MonoBehaviour
 
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
-
-    //private void ChangeTextColor() //thread method to change text color
-    //{
-    //    if (timerText.color == Color.red) //if its already red we change it to yellow
-    //    {
-    //        timerText.color = Color.yellow;
-    //        Thread.Sleep(1000);
-    //        timerText.color = Color.red;
-    //    }
-    //    else
-    //    {
-    //        timerText.color = Color.red; //otherwise it blinks red
-    //        Thread.Sleep(1000);
-    //        timerText.color = Color.white;
-    //    }
-    //} 
     public void ApplyPenalty()
     {
         if (hasPenalty)
         {
             currentTime = currentTime - penaltySeconds;
-            //ChangeColor.Start();
+            StartCoroutine(ChangeColor());
         }
     }
-    //IEnumerator ChangeColor()
-    //{
-    //    Color c = timerText.Color;
-    //    timerText.color = Color.yellow;
-    //    yield return new WaitForSeconds(1f);
-    //    timerText.color = c;
-    //    yield return null;
-    //}
+    IEnumerator ChangeColor()
+    {
+        Color c = timerText.color;
+        timerText.color = Color.yellow;
+        yield return new WaitForSeconds(1f);
+        timerText.color = c;
+        yield return null;
+    }
 }
