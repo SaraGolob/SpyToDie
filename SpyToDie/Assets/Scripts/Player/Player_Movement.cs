@@ -41,7 +41,14 @@ public class Player_Movement : MonoBehaviour
     }
     public void PauseMovement()
     {
-        pauseMovement = !pauseMovement;
+        if (movementSpeed> 0)
+        {
+            movementSpeed = 0;
+        }
+        else if (movementSpeed == 0)
+        {
+            movementSpeed = 5;
+        }
     }
     private void PlayerAnimation()
     {

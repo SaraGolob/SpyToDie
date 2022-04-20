@@ -11,33 +11,45 @@ public class Countdown_Timer : MonoBehaviour
 
     [Header("Timer Settings")]
     public bool currentTimeInMinutes; //set this to true if inputed current time is in minutes and not seconds
-    public float currentTime;
+    public float startTimer;
+    public static float currentTime;
+
     public float endingTime;
 
     [Header("Penalties")]
     public bool hasPenalty;
     public float penaltySeconds;
 
-    public static bool timeIsUp;
+    
     void Start()
     {
+
         if (currentTimeInMinutes) //converts time to seconds in case we input minutes
         {
-            currentTime = currentTime * 60;
+            currentTime = startTimer * 60;
+        }
+        else
+        {
+            currentTime = startTimer;
         }
     }
     void Update()
     {
+        
         currentTime -= Time.deltaTime;
-
-        if (currentTime <= endingTime)
+        if (currentTime <= 10 )
         {
-            currentTime = endingTime;
-            SetTimerText();
             timerText.color = Color.red;
-            enabled = false;
-            timeIsUp = true;
+            if (currentTime <= endingTime)
+            {
+                currentTime = endingTime;
+                SetTimerText();
+                timerText.color = Color.red;
+                enabled = false;
+
+            }
         }
+       
         SetTimerText();
     }
 
