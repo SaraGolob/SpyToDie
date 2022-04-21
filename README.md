@@ -2,9 +2,9 @@
 
 ### README
 
-   SpyToDie is a puzzle solving game made in Unity. The game currently has a demo with 1 simple puzzle.
+   SpyToDie is a puzzle solving game made in Unity. The game currently has a demo with 3 puzzles.
 
-   To play the game you need to open the MAIN branch in Unity 2020.3.31f1. To play the demo of the game you must select the scene called "Demo" and then      run the game. The character moves either with WASD or with the arrow-keys. To interact with an object, press E.
+   To play the game you need to build and run the game or try using the .EXE file in the submitted folder. The character moves either with WASD or with the arrow-keys.      To interact with an object, press E. 
 
 ### CONTACT
 
