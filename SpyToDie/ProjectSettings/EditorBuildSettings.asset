@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
+    path: Assets/Scenes/LoadingMultiplayerScreen.unity
+    guid: 90ead8bb5c3fa34428ff1f5c18588211
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: bd1fca1769b9ff94690e1501ee05aad1
   - enabled: 1

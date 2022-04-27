@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
+using TMPro;
 
 public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
 {
-    public InputField createInput;
-    public InputField joinInput;
+    [SerializeField ]public TextMeshProUGUI joinInput;
     public void CreateRoom()//create room
     {
-        PhotonNetwork.CreateRoom(createInput.text);
+        //PhotonNetwork.CreateRoom(createInput.text);
     }
     public void JoinRoom()//join room
     {
