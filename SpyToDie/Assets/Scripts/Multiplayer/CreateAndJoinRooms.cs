@@ -7,7 +7,7 @@ using TMPro;
 
 public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
 {
-    [SerializeField] public TextMeshProUGUI joinInput;
+    public TMP_InputField joinInput;
     public void CreateRoom()//create room
     {
         int first = Random.Range(0, 9);
