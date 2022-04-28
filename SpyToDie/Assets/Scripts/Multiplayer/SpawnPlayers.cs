@@ -10,14 +10,10 @@ public class SpawnPlayers : MonoBehaviour
     public GameObject playerPrefab;
     public Text text;
     //Coordinates on where you can spawn on a specific place
-    public float minX;
-    public float maxX;
-    public float minY;
-    public float maxY;
 
     private void Start()
     {
-        Vector2 randomPos = new Vector2(70,70);
+        Vector2 randomPos = new Vector2(0,0);
         PhotonNetwork.Instantiate(playerPrefab.name, randomPos, Quaternion.identity);
         text.text = TransferableVariabels.ID;
     }
