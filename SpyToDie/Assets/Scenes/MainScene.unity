@@ -13062,7 +13062,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4648427040437992045, guid: 6d79b9524eea565408f8f94fc7fe32d5, type: 3}
         m_TargetAssemblyTypeName: Player_Movement, Assembly-CSharp
         m_MethodName: PauseMovement
         m_Mode: 1
@@ -20071,7 +20071,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4648427040437992045, guid: 6d79b9524eea565408f8f94fc7fe32d5, type: 3}
         m_TargetAssemblyTypeName: Player_Movement, Assembly-CSharp
         m_MethodName: PauseMovement
         m_Mode: 1
