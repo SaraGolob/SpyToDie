@@ -3612,7 +3612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f194547665b1ef74e963815c834ee3e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransform: {fileID: 4648427040437992048, guid: 6d79b9524eea565408f8f94fc7fe32d5, type: 3}
+  playerTransform: {fileID: 4648427040437992042, guid: 6d79b9524eea565408f8f94fc7fe32d5, type: 3}
 --- !u!4 &558249851
 Transform:
   m_ObjectHideFlags: 0

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class References : MonoBehaviour
 {
-    public Transform playerTransform;
+    public GameObject playerTransform;
     public static References instance;
     
     private void Awake()
