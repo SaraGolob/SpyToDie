@@ -10,7 +10,7 @@ public class Player_Movement : MonoBehaviour
     public Animator animator;
     [Header("Movement")]
     [Tooltip("this controlls the speed of the character")] public float movementSpeed;
-    [Header("Tilemap")]
+    //[Header("Tilemap")]
     public Tilemap obstacles;
     bool pauseMovement;
     //[SerializeField] if you want private to show in inspector
