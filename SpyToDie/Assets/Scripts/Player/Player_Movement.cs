@@ -46,7 +46,7 @@ public class Player_Movement : MonoBehaviour
 
 
                 rigidBody2D.MovePosition(oldLocation + movementThisFrame); //moves the player
-                SpawnPlayers.playerTrans.transform.position = oldLocation + movementThisFrame;
+                //SpawnPlayers.playerTrans.transform.position = oldLocation + movementThisFrame;//You can actually interact with this!!!
             }
         //}
         
