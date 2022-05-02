@@ -10,11 +10,10 @@ public class Countdown_Timer : MonoBehaviour
     public TMP_Text timerText;
 
     [Header("Timer Settings")]
-    public bool currentTimeInMinutes; //set this to true if inputed current time is in minutes and not seconds
-    public float startTimer;
+    [Tooltip("Set this to true if inputed time is in minutes")] public bool currentTimeInMinutes;
+    [Tooltip("Time at the point we start counting")] public float startTimer;
     public static float currentTime;
-
-    public float endingTime;
+    [Tooltip("Time the timer has to reach")] public float endingTime;
 
     [Header("Penalties")]
     public bool hasPenalty;
