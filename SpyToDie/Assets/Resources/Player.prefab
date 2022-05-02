@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 4648427040437992045}
   - component: {fileID: 4648427040437992044}
   - component: {fileID: 4648427040437992043}
-  - component: {fileID: 5586107293282079459}
+  - component: {fileID: 3621561883738126105}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -102,8 +102,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4648427040437992042}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -12.635031, y: -1.0236636, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children:
   - {fileID: 4648427040110208014}
   m_Father: {fileID: 0}
@@ -232,7 +232,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5586107293282079459
+--- !u!114 &3621561883738126105
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

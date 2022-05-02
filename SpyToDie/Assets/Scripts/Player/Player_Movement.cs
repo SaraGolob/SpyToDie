@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using Photon.Pun;
 
 public class Player_Movement : MonoBehaviour
 {
@@ -19,25 +20,33 @@ public class Player_Movement : MonoBehaviour
     private Vector2 movement;
     private Vector2 movementThisFrame;
     private Vector2 oldLocation;
-
+    private PhotonView view;
+    private void Start()
+    {
+        view = GetComponent<PhotonView>();//your character for multiplayer view
+    }
     private void Update() //inputs
     {
         movement = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")); //gets inputs
     }
     private void FixedUpdate() //physics (updates at the constant speed)
     {
-        if (!pauseMovement)
+        if(view.IsMine)//checks that its your movement.
         {
-            movementThisFrame = movement.normalized * movementSpeed * Time.deltaTime; //time.deltatime is time between two fixed updates (frames), movement.normalized normalizes the speed so we always move at the same speed
-            oldLocation = rigidBody2D.position; //save old position
-                                                //Vector3Int obstacleMapTile = obstacles.WorldToCell(rigidBody2D.position + (movement / 2) - new Vector2(0, 0.5f));
+            if (!pauseMovement)
+            {
+                movementThisFrame = movement.normalized * movementSpeed * Time.deltaTime; //time.deltatime is time between two fixed updates (frames), movement.normalized normalizes the speed so we always move at the same speed
+                oldLocation = rigidBody2D.position; //save old position
+                                                    //Vector3Int obstacleMapTile = obstacles.WorldToCell(rigidBody2D.position + (movement / 2) - new Vector2(0, 0.5f));
 
-            PlayerAnimation();
+                PlayerAnimation();
 
-          
-            rigidBody2D.MovePosition(oldLocation + movementThisFrame); //moves the player
-                                                                       
+
+                rigidBody2D.MovePosition(oldLocation + movementThisFrame); //moves the player
+                SpawnPlayers.playerTrans.transform.position = oldLocation + movementThisFrame;
+            }
         }
+        
     }
     public void PauseMovement()
     {

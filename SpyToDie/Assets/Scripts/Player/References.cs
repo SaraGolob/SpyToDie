@@ -6,7 +6,6 @@ public class References : MonoBehaviour
 {
     public GameObject playerTransform;
     public static References instance;
-    
     private void Awake()
     {
         if (instance == null)
