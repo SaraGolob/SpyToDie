@@ -23,19 +23,19 @@ public class Player_Movement : MonoBehaviour
     private PhotonView view;
     private void Start()
     {
-        view = GetComponent<PhotonView>();//your character for multiplayer view
+        //view = GetComponent<PhotonView>();//your character for multiplayer view
     }
     private void Update() //inputs
     {
-        if (view.IsMine)
-        {
+        //if (view.IsMine)
+        //{
             movement = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")); //gets inputs
-        }
+        //}
     }
     private void FixedUpdate() //physics (updates at the constant speed)
     {
-        if(view.IsMine)//checks that its your movement.
-        {
+        //if(view.IsMine)//checks that its your movement.
+        //{
             if (!pauseMovement)
             {
                 movementThisFrame = movement.normalized * movementSpeed * Time.deltaTime; //time.deltatime is time between two fixed updates (frames), movement.normalized normalizes the speed so we always move at the same speed
@@ -46,9 +46,9 @@ public class Player_Movement : MonoBehaviour
 
 
                 rigidBody2D.MovePosition(oldLocation + movementThisFrame); //moves the player
-                SpawnPlayers.playerTrans.transform.position = oldLocation + movementThisFrame;
+                //SpawnPlayers.playerTrans.transform.position = oldLocation + movementThisFrame;
             }
-        }
+        //}
         
     }
     public void PauseMovement()
