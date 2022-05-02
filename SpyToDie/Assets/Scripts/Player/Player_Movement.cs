@@ -27,7 +27,10 @@ public class Player_Movement : MonoBehaviour
     }
     private void Update() //inputs
     {
-        movement = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")); //gets inputs
+        if (view.IsMine)
+        {
+            movement = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")); //gets inputs
+        }
     }
     private void FixedUpdate() //physics (updates at the constant speed)
     {
