@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
-using UnityEngine.Events;
 
 public class Player_Movement : MonoBehaviour
 {
@@ -14,9 +13,6 @@ public class Player_Movement : MonoBehaviour
     //[Header("Tilemap")]
     public Tilemap obstacles;
     bool pauseMovement;
-    public static bool isPaused;
-    public UnityEvent simpleEventPause;
-    public UnityEvent simpleEventUnpause;
     //[SerializeField] if you want private to show in inspector
     //[HideInInspector] if you want public not to show in inspector
     //[System.Serializable] enums or class to be shown in inspector
@@ -27,17 +23,6 @@ public class Player_Movement : MonoBehaviour
     private void Update() //inputs
     {
         movement = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")); //gets inputs
-        
-        if (Input.GetKeyDown(KeyCode.Escape) && !isPaused)
-        {
-            simpleEventPause.Invoke();
-            PauseMenu();
-        }
-        else if (Input.GetKeyDown(KeyCode.Escape) && isPaused)
-        {
-            simpleEventUnpause.Invoke();
-            PauseMenu();
-        }
     }
     private void FixedUpdate() //physics (updates at the constant speed)
     {
@@ -64,11 +49,6 @@ public class Player_Movement : MonoBehaviour
         {
             movementSpeed = 5;
         }
-    }
-
-    public void PauseMenu()
-    {
-        isPaused = !isPaused;
     }
     private void PlayerAnimation()
     {
