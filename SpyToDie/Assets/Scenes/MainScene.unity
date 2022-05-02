@@ -406,6 +406,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 236567629}
+        m_TargetAssemblyTypeName: Player_Movement, Assembly-CSharp
+        m_MethodName: PauseMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &46108208
 GameObject:
   m_ObjectHideFlags: 0
@@ -2102,7 +2114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigidBody2D: {fileID: 236567628}
   animator: {fileID: 236567627}
-  movementSpeed: 5
+  movementSpeed: 0
   obstacles: {fileID: 1921962671}
 --- !u!58 &236567630
 CircleCollider2D:
@@ -3665,6 +3677,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 236567629}
+        m_TargetAssemblyTypeName: Player_Movement, Assembly-CSharp
+        m_MethodName: PauseMovement
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -12732,6 +12756,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 236567629}
+        m_TargetAssemblyTypeName: Player_Movement, Assembly-CSharp
+        m_MethodName: PauseMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &991990618
 GameObject:
   m_ObjectHideFlags: 0
@@ -13934,6 +13970,21 @@ MonoBehaviour:
   - Solve the last puzzles and escape!
   - We don't have much time!
   textDelay: 0.1
+  PlayerPauseMovement:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 236567629}
+        m_TargetAssemblyTypeName: Player_Movement, Assembly-CSharp
+        m_MethodName: PauseMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1213700048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13989,6 +14040,21 @@ MonoBehaviour:
   - There is something odd with this trash cans.
   - Do you think it's another puzzle?
   textDelay: 0.1
+  PlayerPauseMovement:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 236567629}
+        m_TargetAssemblyTypeName: Player_Movement, Assembly-CSharp
+        m_MethodName: PauseMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1213700051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14006,6 +14072,21 @@ MonoBehaviour:
   - Oh did you hit your toe into something invisible?
   - It has to be important if they hid it like this!
   textDelay: 0.1
+  PlayerPauseMovement:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 236567629}
+        m_TargetAssemblyTypeName: Player_Movement, Assembly-CSharp
+        m_MethodName: PauseMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1213700052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14025,6 +14106,21 @@ MonoBehaviour:
   - Maybe that piece next to it is the first part?
   - I wonder where the second piece is...
   textDelay: 0.1
+  PlayerPauseMovement:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 236567629}
+        m_TargetAssemblyTypeName: Player_Movement, Assembly-CSharp
+        m_MethodName: PauseMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1213786265
 GameObject:
   m_ObjectHideFlags: 0

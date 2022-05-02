@@ -26,7 +26,7 @@ public class Player_Movement : MonoBehaviour
     }
     private void FixedUpdate() //physics (updates at the constant speed)
     {
-        if (!pauseMovement)
+        if (/*!pauseMovement &&*/ movementSpeed == 5)
         {
             movementThisFrame = movement.normalized * movementSpeed * Time.deltaTime; //time.deltatime is time between two fixed updates (frames), movement.normalized normalizes the speed so we always move at the same speed
             oldLocation = rigidBody2D.position; //save old position

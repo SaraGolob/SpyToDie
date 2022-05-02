@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Events;
 
 public class Dialogue : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
     public string[] lines;
     public float textDelay = 0.1f;
+    public UnityEvent PlayerPauseMovement;
 
     private int index;
     void Start()
@@ -58,6 +60,8 @@ public class Dialogue : MonoBehaviour
         {
             gameObject.SetActive(false);
             this.enabled = false;
+            //fix later
+            PlayerPauseMovement.Invoke();
         }
     }
 }
