@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -86,21 +87,9 @@ public class ButtonLogic : MonoBehaviour
     }
     void CheckIfCorrect()
     {
-        if (enteredColours.Count == correctColours.Count)
+        if (Enumerable.SequenceEqual(enteredColours, correctColours))
         {
-            if (enteredColours[0] == correctColours[0])
-            {
-                if (enteredColours[1] == correctColours[1])
-                {
-                    if (enteredColours[2] == correctColours[2])
-                    {
-                        if (enteredColours[3] == correctColours[3])
-                        {
-                            isSolved = true;
-                        }
-                    }
-                }
-            }
+            isSolved = true;
         }
     }
 }
