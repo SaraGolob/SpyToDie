@@ -17,15 +17,17 @@ public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
         string roomID = first.ToString();
         TransferableVariabels.ID = roomID;
         PhotonNetwork.CreateRoom(roomID);
+        PhotonNetwork.NickName = "Player1";
     }
     public void JoinRoom()//join room
     {
         PhotonNetwork.JoinRoom(joinInput.text);
+        PhotonNetwork.NickName = "Player2";
     }
     public override void OnJoinedRoom()//will be automaticaly called when connected
     {
 
-        PhotonNetwork.LoadLevel("MainScene");//load a special scene //add onclick event on scene
+        PhotonNetwork.LoadLevel("MultiPlayerMainScene");//load a special scene //add onclick event on scene
     }
 
 }
