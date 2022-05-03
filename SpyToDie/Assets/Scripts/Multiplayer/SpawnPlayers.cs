@@ -19,17 +19,18 @@ public class SpawnPlayers : MonoBehaviour
         Vector3 randomPos = new Vector3(0, 0, 0);
         PhotonNetwork.Instantiate(IDObject.name, randomPos, Quaternion.identity);
         text.text = TransferableVariabels.ID;
-        playerTrans = IDObject.transform;
-        Debug.Log(IDObject.GetPhotonView().ViewID);
+             
         if (PhotonNetwork.NickName == "Player1")
         {
             Player1.SetActive(true);
             Player2.SetActive(false);
+            playerTrans = Player1.transform;
         }
         else if (PhotonNetwork.NickName == "Player2")
         {
             Player1.SetActive(false);
             Player2.SetActive(true);
+            playerTrans = Player2.transform;
         }
     }
 }
