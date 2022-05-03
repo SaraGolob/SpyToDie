@@ -6,9 +6,7 @@ public class RangeTrigger : MonoBehaviour
     public float interactRange = 1f;
     public Vector2 offset;
     public int repeatThis = 0;
-    public UnityEvent simpleEvent;
-
-
+    public DialogueScriptableObject dialogue;
     public void Update() //does similar thing to generic interact script except it triggers the event as soon as someone enters certain range
     {
         if (repeatThis >= 0)
@@ -22,7 +20,10 @@ public class RangeTrigger : MonoBehaviour
     }
     public void Interact()
     {
-        simpleEvent?.Invoke();
+        if(DialogueManager.instance != null)
+        {
+            DialogueManager.instance.QueueDialogue(dialogue);
+        }
     }
     private void OnDrawGizmosSelected() //draws the range in the scene view so you can visualize it easier
     {

@@ -12,7 +12,7 @@ public class Player_Movement : MonoBehaviour
     [Tooltip("this controlls the speed of the character")] public float movementSpeed;
     //[Header("Tilemap")]
     public Tilemap obstacles;
-    bool pauseMovement;
+    public bool PauseMovement { get; set; } //properties use pascalcase
     //[SerializeField] if you want private to show in inspector
     //[HideInInspector] if you want public not to show in inspector
     //[System.Serializable] enums or class to be shown in inspector
@@ -22,33 +22,21 @@ public class Player_Movement : MonoBehaviour
 
     private void Update() //inputs
     {
-        movement = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")); //gets inputs
+        if (PauseMovement)
+        {
+            movement = Vector2.zero;
+        }
+        else
+        {
+            movement = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")); //gets inputs
+        }
     }
     private void FixedUpdate() //physics (updates at the constant speed)
     {
-        if (/*!pauseMovement &&*/ movementSpeed == 5)
-        {
-            movementThisFrame = movement.normalized * movementSpeed * Time.deltaTime; //time.deltatime is time between two fixed updates (frames), movement.normalized normalizes the speed so we always move at the same speed
-            oldLocation = rigidBody2D.position; //save old position
-                                                //Vector3Int obstacleMapTile = obstacles.WorldToCell(rigidBody2D.position + (movement / 2) - new Vector2(0, 0.5f));
-
-            PlayerAnimation();
-
-          
-            rigidBody2D.MovePosition(oldLocation + movementThisFrame); //moves the player
-                                                                       
-        }
-    }
-    public void PauseMovement()
-    {
-        if (movementSpeed> 0)
-        {
-            movementSpeed = 0;
-        }
-        else if (movementSpeed == 0)
-        {
-            movementSpeed = 5;
-        }
+        movementThisFrame = movement.normalized * movementSpeed * Time.deltaTime; //time.deltatime is time between two fixed updates (frames), movement.normalized normalizes the speed so we always move at the same speed
+        oldLocation = rigidBody2D.position; //save old position
+        PlayerAnimation();
+        rigidBody2D.MovePosition(oldLocation + movementThisFrame); //moves the player
     }
     private void PlayerAnimation()
     {
