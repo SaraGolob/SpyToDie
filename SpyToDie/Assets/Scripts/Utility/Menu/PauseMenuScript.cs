@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
-public class PauseScript : MonoBehaviour
+public class PauseMenuScript : MonoBehaviour
 {
     public static bool isPaused;
     [Tooltip("The pause menu scene")] public GameObject pauseMenu;

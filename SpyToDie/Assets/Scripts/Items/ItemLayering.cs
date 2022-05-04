@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Item_layering : MonoBehaviour
+public class ItemLayering : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
     void Start()

@@ -8,12 +8,12 @@ public class SceneChange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(CheckPuzzle.isSolved && NumberPad.isSolved && ButtonLogic.isSolved)
+        if(CheckTrashPuzzle.isSolved && NumberPad.isSolved && ButtonLogic.isSolved)
         {
             hasFinished = true;
             SceneManager.LoadScene("EndScreen");
         }
-        else if (Countdown_Timer.currentTime<=0)
+        else if (Timer.currentTime<=0)
         { 
             SceneManager.LoadScene("EndScreen");
          }

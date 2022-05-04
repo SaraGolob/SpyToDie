@@ -5,7 +5,7 @@ public class References : MonoBehaviour
     public Transform playerTransform;
     public static References instance;
 
-    public Player_Movement playerMovement;
+    public PlayerMovement playerMovement;
     private void Awake()
     {
         if (instance == null)

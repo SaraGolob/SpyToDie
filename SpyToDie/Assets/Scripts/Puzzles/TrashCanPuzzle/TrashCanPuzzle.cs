@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LightPuzzle : MonoBehaviour
+public class TrashCanPuzzle : MonoBehaviour
 {
 
     public bool isActive;
@@ -29,7 +29,7 @@ public class LightPuzzle : MonoBehaviour
 
     public void ChangeState()
     {
-        if (!CheckPuzzle.isSolved)
+        if (!CheckTrashPuzzle.isSolved)
         {
             isActive = !isActive;
         }

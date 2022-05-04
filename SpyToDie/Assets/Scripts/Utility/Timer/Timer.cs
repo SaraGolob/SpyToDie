@@ -4,7 +4,7 @@ using System.Threading;
 using UnityEngine;
 using TMPro;
 
-public class Countdown_Timer : MonoBehaviour
+public class Timer : MonoBehaviour
 {
     [Header("Component")]
     public TMP_Text timerText;
