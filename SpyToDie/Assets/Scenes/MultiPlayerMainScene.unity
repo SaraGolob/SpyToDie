@@ -11008,7 +11008,7 @@ GameObject:
   - component: {fileID: 588307120}
   m_Layer: 0
   m_Name: PrettyReferences
-  m_TagString: Player 1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12546,7 +12546,7 @@ GameObject:
   - component: {fileID: 792504257}
   m_Layer: 0
   m_Name: PrettyReferences
-  m_TagString: Player 2
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18631,10 +18631,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player 2
       objectReference: {fileID: 0}
-    - target: {fileID: 4648427040437992042, guid: 6d79b9524eea565408f8f94fc7fe32d5, type: 3}
-      propertyPath: m_TagString
-      value: Player 2
-      objectReference: {fileID: 0}
     - target: {fileID: 4648427040437992048, guid: 6d79b9524eea565408f8f94fc7fe32d5, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -19573,10 +19569,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4648427040437992042, guid: 6d79b9524eea565408f8f94fc7fe32d5, type: 3}
       propertyPath: m_Name
-      value: Player 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4648427040437992042, guid: 6d79b9524eea565408f8f94fc7fe32d5, type: 3}
-      propertyPath: m_TagString
       value: Player 1
       objectReference: {fileID: 0}
     - target: {fileID: 4648427040437992048, guid: 6d79b9524eea565408f8f94fc7fe32d5, type: 3}
