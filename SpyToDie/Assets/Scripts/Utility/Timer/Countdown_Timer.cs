@@ -42,7 +42,6 @@ public class Countdown_Timer : MonoBehaviour
             if (currentTime <= endingTime)
             {
                 currentTime = endingTime;
-                SetTimerText();
                 timerText.color = Color.red;
                 enabled = false;
 

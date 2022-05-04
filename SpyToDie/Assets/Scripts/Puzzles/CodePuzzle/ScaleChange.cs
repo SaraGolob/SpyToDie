@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ScaleChange : MonoBehaviour
 {
-    public GameObject obj;
-    private Vector3 oldPod = new Vector3(4, 4, 0);
+    public GameObject obj; //Only alowed abriviation 
+    private Vector3 oldPositon = new Vector3(4, 4, 0);
     public void ChangeScale()
     {
         obj.transform.position = new Vector3(0, 0, 0);

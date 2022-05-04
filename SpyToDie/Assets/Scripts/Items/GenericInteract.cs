@@ -6,6 +6,6 @@ public class Generic_interact : Interactable
     public UnityEvent simpleEvent;
     public override void Interact()
     {
-        simpleEvent?.Invoke();
+        simpleEvent?.Invoke(); 
     }
 }

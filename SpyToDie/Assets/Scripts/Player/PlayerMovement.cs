@@ -12,10 +12,11 @@ public class Player_Movement : MonoBehaviour
     [Tooltip("this controlls the speed of the character")] public float movementSpeed;
     //[Header("Tilemap")]
     public Tilemap obstacles;
-    public bool PauseMovement { get; set; } //properties use pascalcase
+    public bool PauseMovement { get; set; } 
     //[SerializeField] if you want private to show in inspector
     //[HideInInspector] if you want public not to show in inspector
     //[System.Serializable] enums or class to be shown in inspector
+    
     private Vector2 movement;
     private Vector2 movementThisFrame;
     private Vector2 oldLocation;
