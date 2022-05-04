@@ -9,7 +9,7 @@ public class Interactable : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E)) //checks if player is pressing the button
         {
-            //Debug.Log(References.instance.playerTransform.tag);
+            //Debug.Log(.playerTrans.transform.position);
             if ((((Vector2)transform.position + offset) - (Vector2)References.instance.playerTransform.transform.position).sqrMagnitude < interactRange * interactRange) //bunch of math, basically checks if player is inside range
             {
                 Interact();
