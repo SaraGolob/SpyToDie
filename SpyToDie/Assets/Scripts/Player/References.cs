@@ -6,6 +6,11 @@ public class References : MonoBehaviour
 {
     public GameObject playerTransform;
     public static References instance;
+
+    private void Start()
+    {
+        Debug.Log(instance.playerTransform.tag);
+    }
     private void Awake()
     {
         if (instance == null)

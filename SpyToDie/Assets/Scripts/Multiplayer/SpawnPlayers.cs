@@ -10,7 +10,6 @@ public class SpawnPlayers : MonoBehaviour
     public GameObject IDObject;
     public GameObject Player1;
     public GameObject Player2;
-    public static Transform playerTrans;
     public Text text;
     //Coordinates on where you can spawn on a specific place
 
@@ -24,15 +23,11 @@ public class SpawnPlayers : MonoBehaviour
         {
             Player1.SetActive(true);
             Player2.SetActive(false);
-            //playerTrans = Player1.transform;
-            //Debug.Log(Player1.tag);
         }
         else if (PhotonNetwork.NickName == "Player2")
         {
             Player1.SetActive(false);
             Player2.SetActive(true);
-            //playerTrans = Player2.transform;
-            //Debug.Log(Player2.tag);
         }
     }
 }
