@@ -271,16 +271,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Did you ever hear the tragedy of Darth Plagueis The Wise? I thought not.
-    It\u2019s not a story the Jedi would tell you. It\u2019s a Sith legend. Darth
-    Plagueis was a Dark Lord of the Sith, so powerful and so wise he could use the
-    Force to influence the midichlorians to create life\u2026 He had such a knowledge
-    of the dark side that he could even keep the ones he cared about from dying.
-    The dark side of the Force is a pathway to many abilities some consider to be
-    unnatural. He became so powerful\u2026 the only thing he was afraid of was losing
-    his power, which eventually, of course, he did. Unfortunately, he taught his
-    apprentice everything he knew, then his apprentice killed him in his sleep. Ironic.
-    He could save others from death, but not himself."
+  m_text: "Right before you could get your hands on the secret formula, the police
+    showed up. \n\nThe alarm had been triggered and you tried to escape, but despite
+    your best efforts you got caught. \n\nA week later you find yourself in prison
+    and you find out that the friend who guided you inside the lab has been put in
+    the same prison as you.\n\nNow you and your friend must work together to find
+    a way to escape this prison."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 985a05c855d6d9445a4678d55645972f, type: 2}
   m_sharedMaterial: {fileID: -3857888365623043749, guid: 985a05c855d6d9445a4678d55645972f, type: 2}

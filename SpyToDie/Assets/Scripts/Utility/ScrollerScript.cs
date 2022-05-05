@@ -11,15 +11,14 @@ public class ScrollerScript : MonoBehaviour
     public TMP_Text text;
     [Header("Scrolling speed:")]
     public int scrollSpeed;
-    [Header("Scrolling edge:")]
-    public int scrollEdge;
+    [Header("Scrolling speed:")]
+    public float scrollEdge;
 
-    // Start is called before the first frame update
     void Start()
     {
+        scrollEdge = 540f + text.preferredHeight;
     }
 
-    // Update is called once per frame
     void Update()
     {
         text.transform.Translate(0, scrollSpeed, 0);
