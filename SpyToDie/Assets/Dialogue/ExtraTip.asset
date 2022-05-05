@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 61c4effc469693e4fb40514662c2719b, type: 3}
-  m_Name: TrashcanTip
+  m_Name: ExtraTip
   m_EditorClassIdentifier: 
   dialogueInfo:
-  - dialogue: This trashcans are.. connected? Why do some of them open and close
-      at the same time?
-  - dialogue: Hmm you think it's another puzzle?
-  - dialogue: But why would the laboratory hide it the trash can?
+  - dialogue: 'Hmm this papers don''t reveal anything we don''t already know... '
+  - dialogue: '"The project was created for the greater good, blah blah blah!" Ugh..
+      The lies they tell themselves...'
+  - dialogue: Nevermind that, just find the formula and get out of here.

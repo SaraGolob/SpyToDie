@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BookTip
   m_EditorClassIdentifier: 
   dialogueInfo:
-  - dialogue: awd
-  - dialogue: wdaw
-  - dialogue: gawgawg
-  - dialogue: agwagawg
+  - dialogue: OH NO WHAT'S WRONG??
+  - dialogue: Oh you hit your toe into something...
+  - dialogue: Now it's not the time, We have been caught remember?!
+  - dialogue: The goverment is on the way, you need to get out of there ASAP!

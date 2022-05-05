@@ -51,6 +51,11 @@ public class DialogueManager : MonoBehaviour
         InBuffer = true;
         StartCoroutine(Buffer());
         currentDialogue = dialogue;
+        //if (References.instance.playerTransform.position.y <= 0)
+        //{
+        //    dialogueBox. //if player is below 0 show text box above ?
+        //}
+
         dialogueBox.SetActive(true);
         dialogueQueue.Clear();
         foreach(DialogueScriptableObject.Info line in dialogue.dialogueInfo)

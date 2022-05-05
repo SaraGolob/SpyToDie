@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: PaperCodeTip
   m_EditorClassIdentifier: 
   dialogueInfo:
-  - dialogue: wdawd
-  - dialogue: dwadwa
+  - dialogue: Maybe this computer holds the formula? Quick we don't have much time!
+  - dialogue: Find the code to log in.. Maybe this piece next to it is the first
+      part of the code?
