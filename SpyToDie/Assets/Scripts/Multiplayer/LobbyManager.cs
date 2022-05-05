@@ -23,18 +23,19 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     }
     public void OnClickCreate()
     {
+        PhotonNetwork.NickName = "Player1";
         if (roomInputField.text.Length >= 1)
         {
             PhotonNetwork.CreateRoom(roomInputField.text, new RoomOptions() { MaxPlayers = 2 });
             
         }
-        PhotonNetwork.NickName = "Player1";
+        
     }
     public override void OnJoinedRoom()
     {
         //lobbyPanel.SetActive(false);
         //roomPanel.SetActive(true);
-        PhotonNetwork.NickName = "Player2";
+        
         roomName.text = PhotonNetwork.CurrentRoom.Name;
     }
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
@@ -58,6 +59,8 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     }
     public void JoinRoom(string roomName)
     {
+        
         PhotonNetwork.JoinRoom(roomName);
+        PhotonNetwork.NickName = "Player2";
     }
 }
