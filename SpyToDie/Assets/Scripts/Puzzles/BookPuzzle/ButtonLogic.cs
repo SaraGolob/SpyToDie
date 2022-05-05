@@ -53,28 +53,20 @@ public class ButtonLogic : MonoBehaviour
 
     public void AddToList(string colour)
     {
-        if (enteredColours.Count < 4)
-        {
-            enteredColours.Add(colour);
-        }
-        else
-        {
-            enteredColours.Clear();
-            enteredColours.Add(colour);
-        }
+        enteredColours.Add(colour);
     }
 
     void ReadColours()
     {
-        sColours.Clear(); 
+        sColours.Clear(); //clears all colours
         for (int i = 0; i < 4; i++)
         {
-            sColours.Add(SColor.FromName("WHITE"));
+            sColours.Add(SColor.FromName("WHITE")); //replace all colours with white
         }
 
         for (int i = 0; i < enteredColours.Count; i++)
         {
-            sColours[i] = SColor.FromName(enteredColours[i]);
+            sColours[i] = SColor.FromName(enteredColours[i]); //replace the white with entered colours
         }
     }
 
@@ -87,9 +79,16 @@ public class ButtonLogic : MonoBehaviour
     }
     void CheckIfCorrect()
     {
-        if (Enumerable.SequenceEqual(enteredColours, correctColours))
+        if (enteredColours.Count == 4)
         {
-            isSolved = true;
+            if (Enumerable.SequenceEqual(enteredColours, correctColours))
+            {
+                isSolved = true;
+            }
+            else
+            {
+                enteredColours.Clear();
+            }
         }
     }
 }

@@ -11,7 +11,11 @@ public class NumberPad : MonoBehaviour
     public Button button;
     public UnityEvent simpleEvent = new UnityEvent();
     public UnityEvent penaltyEvent = new UnityEvent();
-    // Start is called before the first frame update
+
+    public void Start()
+    {
+        isSolved = false;
+    }
     public void PressButton()
     {
         if (!NumberDisplay.limitReached)
