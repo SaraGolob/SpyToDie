@@ -24,13 +24,12 @@ public class SpawnPlayers : MonoBehaviour
         {
             Player1.SetActive(true);
             Player2.SetActive(false);
-            playerTrans = Player1.transform;
         }
         else if (PhotonNetwork.NickName == "Player2")
         {
             Player1.SetActive(false);
             Player2.SetActive(true);
-            playerTrans = Player2.transform;
+            //References.instance.playerTransform.tag = "Player 2";
         }
     }
 }
