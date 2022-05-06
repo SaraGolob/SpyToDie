@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndScreen.unity
     guid: 40e2ed0a47463ad48a219fa9c5a8d8e0
+  - enabled: 1
+    path: Assets/Scenes/TextScroller.unity
+    guid: f718309390bbafe49acda41cacb6782e
   m_configObjects: {}
