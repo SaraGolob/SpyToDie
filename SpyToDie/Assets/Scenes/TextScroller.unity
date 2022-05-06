@@ -276,7 +276,7 @@ MonoBehaviour:
     your best efforts you got caught. \n\nA week later you find yourself in prison
     and you find out that the friend who guided you inside the lab has been put in
     the same prison as you.\n\nNow you and your friend must work together to find
-    a way to escape this prison."
+    a way to escape the prison."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 985a05c855d6d9445a4678d55645972f, type: 2}
   m_sharedMaterial: {fileID: -3857888365623043749, guid: 985a05c855d6d9445a4678d55645972f, type: 2}
