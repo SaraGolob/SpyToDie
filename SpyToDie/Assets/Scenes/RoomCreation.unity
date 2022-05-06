@@ -875,7 +875,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomInputField: {fileID: 1515393452}
   roomName: {fileID: 0}
-  roomItemPrefabs: {fileID: -415921719494005687, guid: 8289f06fa987a6f45b638c70d76e1a1b, type: 3}
+  roomItemPrefabs: {fileID: -4005848601071423503, guid: f6a6cb98497ca5a449ea0aa4c663dd1a, type: 3}
   contentObject: {fileID: 2063971939}
 --- !u!4 &220856214
 Transform:
@@ -2648,7 +2648,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 750669294}
   m_Direction: 2
   m_Value: 1.0000054
-  m_Size: 0.98183465
+  m_Size: 0.9818345
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

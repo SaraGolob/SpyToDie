@@ -27,7 +27,6 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         if (roomInputField.text.Length >= 1)
         {
             PhotonNetwork.CreateRoom(roomInputField.text, new RoomOptions() { MaxPlayers = 2 });
-            
         }
         
     }
@@ -35,7 +34,6 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     {
         //lobbyPanel.SetActive(false);
         //roomPanel.SetActive(true);
-        
         roomName.text = PhotonNetwork.CurrentRoom.Name;
     }
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
