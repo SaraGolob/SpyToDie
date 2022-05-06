@@ -550,6 +550,11 @@ Transform:
   m_Father: {fileID: 2033918567}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &92775207 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2730586752694902278, guid: f1109628db9076043a2dd099ec5bc8aa, type: 3}
+  m_PrefabInstance: {fileID: 1721743793}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &113531841
 GameObject:
   m_ObjectHideFlags: 0
@@ -1758,6 +1763,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 92775207}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
   penaltyEvent:
     m_PersistentCalls:

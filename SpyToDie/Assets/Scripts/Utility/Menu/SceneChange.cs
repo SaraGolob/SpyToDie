@@ -16,11 +16,11 @@ public class SceneChange : MonoBehaviour
         if(CheckTrashPuzzle.isSolved && NumberPad.isSolved && ButtonLogic.isSolved)
         {
             hasFinished = true;
-            SceneManager.LoadScene("EndScreen");
+            SceneManager.LoadScene("TextScroller");
         }
         else if (Timer.currentTime<=0)
         { 
-            SceneManager.LoadScene("EndScreen");
+            SceneManager.LoadScene("TextScroller");
          }
     }
 }
