@@ -10,7 +10,7 @@ public class ItemLayering : MonoBehaviour
 
     void Update()
     {
-        if (transform.position.y < References.instance.playerTransform.position.y)
+        if (transform.position.y < References.instance.playerTransform.transform.position.y)
         {
             spriteRenderer.sortingLayerName = "Foreground";
         }
