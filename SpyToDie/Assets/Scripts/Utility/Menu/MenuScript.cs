@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Photon.Pun;
 
 public class MenuScript : MonoBehaviour
 {
     public void PlayButton()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("MainScene");
     }
     public void ExitButton()
     {
@@ -20,6 +21,11 @@ public class MenuScript : MonoBehaviour
     public void LoadingScreen()
     {
         SceneManager.LoadScene("LoadingMultiplayerScreen");
+    }
+    public void DisconnectMultiplayer()
+    {
+        PhotonNetwork.Disconnect();
+        SceneManager.LoadScene("MainMenu");
     }
  
 }
