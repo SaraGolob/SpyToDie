@@ -213,7 +213,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &87384355
 RectTransform:
   m_ObjectHideFlags: 0
@@ -246,14 +246,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1963d9ca21646d47b5f7641802ce2d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 1883113627}
-  lines:
-  - .c.a...hear me?
-  - Hello?!
-  - Hurry up!! The police is almost here!
-  - Solve the last puzzles and escape!
-  - We don't have much time!
-  textSpeed: 0.1
 --- !u!114 &87384357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11025,7 +11017,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f194547665b1ef74e963815c834ee3e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransform: {fileID: 1408944686}
+  playerTransform: {fileID: 1408944687}
+  playerMovement: {fileID: 1408944686}
 --- !u!4 &588307121
 Transform:
   m_ObjectHideFlags: 0
@@ -12577,7 +12570,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f194547665b1ef74e963815c834ee3e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransform: {fileID: 1260809603}
+  playerTransform: {fileID: 1260809604}
+  playerMovement: {fileID: 1260809603}
 --- !u!1 &835882918
 GameObject:
   m_ObjectHideFlags: 0
@@ -13133,28 +13127,6 @@ MonoBehaviour:
   activated: {fileID: 21300000, guid: c28f3c2bfac979c459e60d133135b370, type: 3}
   deactivated: {fileID: 21300000, guid: c289ce3dc755ce044970ca6db56dd534, type: 3}
   spriteRenderer: {fileID: 860045599}
---- !u!114 &860045603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 860045600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  Synchronization: 3
-  OwnershipTransfer: 0
-  observableSearch: 2
-  ObservedComponents: []
-  sceneViewId: 2
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!114 &860045604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18679,11 +18651,17 @@ PrefabInstance:
     - {fileID: 3621561883738126105, guid: 6d79b9524eea565408f8f94fc7fe32d5, type: 3}
     - {fileID: 602024795563020769, guid: 6d79b9524eea565408f8f94fc7fe32d5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6d79b9524eea565408f8f94fc7fe32d5, type: 3}
---- !u!1 &1260809603 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4648427040437992042, guid: 6d79b9524eea565408f8f94fc7fe32d5, type: 3}
+--- !u!114 &1260809603 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4648427040437992045, guid: 6d79b9524eea565408f8f94fc7fe32d5, type: 3}
   m_PrefabInstance: {fileID: 1260809602}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f2c9db3e21a8d4baf42e9c57906805, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1260809604 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4648427040437992048, guid: 6d79b9524eea565408f8f94fc7fe32d5, type: 3}
@@ -19619,11 +19597,17 @@ PrefabInstance:
     - {fileID: 3621561883738126105, guid: 6d79b9524eea565408f8f94fc7fe32d5, type: 3}
     - {fileID: 602024795563020769, guid: 6d79b9524eea565408f8f94fc7fe32d5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6d79b9524eea565408f8f94fc7fe32d5, type: 3}
---- !u!1 &1408944686 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4648427040437992042, guid: 6d79b9524eea565408f8f94fc7fe32d5, type: 3}
+--- !u!114 &1408944686 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4648427040437992045, guid: 6d79b9524eea565408f8f94fc7fe32d5, type: 3}
   m_PrefabInstance: {fileID: 1408944685}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f2c9db3e21a8d4baf42e9c57906805, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1408944687 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4648427040437992048, guid: 6d79b9524eea565408f8f94fc7fe32d5, type: 3}
@@ -20534,7 +20518,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1480065773
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20567,14 +20551,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1963d9ca21646d47b5f7641802ce2d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 782873743}
-  lines:
-  - .c.a...hear me?
-  - Hello?!
-  - Hurry up!! The police is almost here!
-  - Solve the last puzzles and escape!
-  - We don't have much time!
-  textSpeed: 0.1
 --- !u!114 &1480065775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23827,30 +23803,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
-        m_MethodName: set_sprite
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 8976018127306389262, guid: dc747d0a3cdf6594f9f275fdd2a48b4b, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
         m_CallState: 2
   puzzleObject1: 0
   puzzleObject2: 0
