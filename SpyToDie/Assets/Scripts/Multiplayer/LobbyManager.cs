@@ -34,7 +34,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     {
         //lobbyPanel.SetActive(false);
         //roomPanel.SetActive(true);
-        //roomName.text = PhotonNetwork.CurrentRoom.Name;
+        roomInputField.text = PhotonNetwork.CurrentRoom.Name;
     }
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
     {
