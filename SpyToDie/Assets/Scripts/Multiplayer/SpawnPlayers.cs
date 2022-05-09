@@ -24,6 +24,7 @@ public class SpawnPlayers : MonoBehaviour
         {
             Player1.SetActive(true);
             Player2.SetActive(false);
+            //if(GameManager.instance != null){ } Use when not having players in the game
         }
         else if (PhotonNetwork.NickName == "Player2")
         {
