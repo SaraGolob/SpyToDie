@@ -26262,7 +26262,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 72105810757699894, guid: eb7531d4942afc9438f8878e2d79a37e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 72105810757699895, guid: eb7531d4942afc9438f8878e2d79a37e, type: 3}
+      propertyPath: m_Size.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 72105810757699895, guid: eb7531d4942afc9438f8878e2d79a37e, type: 3}
+      propertyPath: m_Size.y
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 72105810757699895, guid: eb7531d4942afc9438f8878e2d79a37e, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 72105810757699895, guid: eb7531d4942afc9438f8878e2d79a37e, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 72105810757699895, guid: eb7531d4942afc9438f8878e2d79a37e, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 0.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 72105810757699895, guid: eb7531d4942afc9438f8878e2d79a37e, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 1.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 72105810757699895, guid: eb7531d4942afc9438f8878e2d79a37e, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 72105810757699895, guid: eb7531d4942afc9438f8878e2d79a37e, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.44
       objectReference: {fileID: 0}
     - target: {fileID: 72105810757700040, guid: eb7531d4942afc9438f8878e2d79a37e, type: 3}
       propertyPath: m_Size.x
@@ -26339,6 +26371,30 @@ PrefabInstance:
     - target: {fileID: 72105810757700041, guid: eb7531d4942afc9438f8878e2d79a37e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 72105810757700042, guid: eb7531d4942afc9438f8878e2d79a37e, type: 3}
+      propertyPath: m_Radius
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 72105810757700042, guid: eb7531d4942afc9438f8878e2d79a37e, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 72105810757700042, guid: eb7531d4942afc9438f8878e2d79a37e, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558235866791513896, guid: eb7531d4942afc9438f8878e2d79a37e, type: 3}
+      propertyPath: m_Radius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558235866791513896, guid: eb7531d4942afc9438f8878e2d79a37e, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558235866791513896, guid: eb7531d4942afc9438f8878e2d79a37e, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.4
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6666719810794951986, guid: eb7531d4942afc9438f8878e2d79a37e, type: 3}
@@ -27138,7 +27194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactRange: 1.2
-  offset: {x: 0, y: 0}
+  offset: {x: -0.4, y: -0.7}
   simpleEvent:
     m_PersistentCalls:
       m_Calls:
