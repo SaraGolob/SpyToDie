@@ -12,10 +12,10 @@ public class References : MonoBehaviour
         {
             instance = this;
         }
-        else
-        {
-            Destroy(this);
-            return;
-        }
+        //else
+        //{
+        //    Destroy(this);
+        //    return;
+        //}
     }
 }
