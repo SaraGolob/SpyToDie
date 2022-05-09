@@ -2263,7 +2263,7 @@ GameObject:
   - component: {fileID: 316275788}
   - component: {fileID: 316275787}
   m_Layer: 0
-  m_Name: TimerText
+  m_Name: TimerTextPlayer1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10562,8 +10562,9 @@ Transform:
   - {fileID: 672336029}
   - {fileID: 1576675103}
   - {fileID: 792504256}
+  - {fileID: 1269240072}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &518511710
 GameObject:
@@ -13509,12 +13510,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 872702857}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.52983344, y: 0.2664272, z: -0.65858674}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.52983344, y: 0.2664272, z: 9.3414135}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 1400283408}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &893464033
 GameObject:
@@ -13661,7 +13662,7 @@ GameObject:
   - component: {fileID: 903030497}
   - component: {fileID: 903030496}
   m_Layer: 0
-  m_Name: TimerText
+  m_Name: TimerTextPlayer2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18164,7 +18165,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1248871322
 GameObject:
@@ -18667,6 +18668,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4648427040437992048, guid: 6d79b9524eea565408f8f94fc7fe32d5, type: 3}
   m_PrefabInstance: {fileID: 1260809602}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1269240071
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1269240072}
+  - component: {fileID: 1269240073}
+  m_Layer: 0
+  m_Name: TimerManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1269240072
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269240071}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.52983344, y: 0.2664272, z: 9.3414135}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 507493037}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1269240073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269240071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9694da5a289fe045ab3477102b18231, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 903030496}
+  currentTimeInMinutes: 1
+  startTimer: 2
+  endingTime: 0
+  hasPenalty: 1
+  penaltySeconds: 10
 --- !u!1 &1283007940
 GameObject:
   m_ObjectHideFlags: 0
@@ -19413,8 +19463,9 @@ Transform:
   - {fileID: 183615005}
   - {fileID: 2011565876}
   - {fileID: 588307121}
+  - {fileID: 872702859}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1400953096
 GameObject:
@@ -25976,7 +26027,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1795855133
 GameObject:
