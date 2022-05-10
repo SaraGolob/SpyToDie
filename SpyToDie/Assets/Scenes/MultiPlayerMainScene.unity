@@ -2012,9 +2012,9 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 287371474}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 190926161f89f5c489f94b8b21839e57, type: 3}
+  m_Script: {fileID: 11500000, guid: f6cefc2bf2be0bd4a8411062c181615d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interactRange: 1
@@ -9863,7 +9863,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 461646885}
-  - component: {fileID: 461646888}
   - component: {fileID: 461646887}
   - component: {fileID: 461646886}
   - component: {fileID: 461646889}
@@ -9952,47 +9951,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &461646888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 461646884}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 190926161f89f5c489f94b8b21839e57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactRange: 1
-  offset: {x: 0, y: 0}
-  simpleEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1922923517}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 4648427040437992045, guid: 6d79b9524eea565408f8f94fc7fe32d5, type: 3}
-        m_TargetAssemblyTypeName: Player_Movement, Assembly-CSharp
-        m_MethodName: PauseMovement
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &461646889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19981,6 +19939,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1576675103}
     m_Modifications:
+    - target: {fileID: -4576050153443231505, guid: 1241880daa7ce0d48901bdeafafe8d8f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6806660079634673449, guid: 1241880daa7ce0d48901bdeafafe8d8f, type: 3}
       propertyPath: player
       value: 
@@ -20101,7 +20063,9 @@ PrefabInstance:
       propertyPath: simpleEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -4576050153443231505, guid: 1241880daa7ce0d48901bdeafafe8d8f, type: 3}
+    - {fileID: 6878745530022555398, guid: 1241880daa7ce0d48901bdeafafe8d8f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1241880daa7ce0d48901bdeafafe8d8f, type: 3}
 --- !u!1 &1474704534
 GameObject:
