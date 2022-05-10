@@ -34,4 +34,8 @@ public class TrashCanPuzzle : MonoBehaviour
             isActive = !isActive;
         }
     }
+    public void AutoSolve()
+    {
+        isActive = true;
+    }
 }

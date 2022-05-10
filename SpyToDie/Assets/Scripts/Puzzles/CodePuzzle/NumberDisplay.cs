@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 public class NumberDisplay : MonoBehaviour
 {
-    public static string numbersToDisplay;
+    public static string numbersToDisplay="";
     public Text display;
     public static bool limitReached;
     public static string correctAnswer = "1234";

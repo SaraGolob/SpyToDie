@@ -24,4 +24,5 @@ public class CheckTrashPuzzle : MonoBehaviour
             simpleEvent.Invoke();
         }
     }
+
 }

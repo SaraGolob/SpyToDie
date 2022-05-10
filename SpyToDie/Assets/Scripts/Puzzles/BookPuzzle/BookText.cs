@@ -6,13 +6,13 @@ using SColor = System.Drawing.Color;
 public class BookText : MonoBehaviour
 {
     [Header("Colours")]
-    public static string colour1 = "green";
+    public static string colour1 = "yellow";
     private SColor sColour1;
     public static string colour2 = "magenta";
     private SColor sColour2;
     public static string colour3 = "red";
     private SColor sColour3;
-    public static string colour4 = "yellow";
+    public static string colour4 = "green";
     private SColor sColour4;
 
     [Header("TMP Text")]
