@@ -27,8 +27,8 @@ public class BookText : MonoBehaviour
 
     private void Start()
     {
-        storyText.text = "To create the secret formula, first add 50ml of the " + colour1 + " hydrochloric acid, then 80ml of the " + colour2 + " cadmium cyanide solution and a single drop from the "
-        + colour3 + " diisodecyl phthalate. The final ingredient is to add 32.71ml of the " + colour4 + " ammonium hydroxide.";
+        storyText.text = "To create the secret formula, first add 50ml of the " + colour1 + " Hydrochloric Acid, then 80ml of the " + colour2 + " Cadmium Cyanide solution and a single drop of "
+        + colour3 + " Diisodecyl Phthalate. The final ingredient is  32.71ml of the " + colour4 + " Ammonium Hydroxide.";
 
         sColour1 = SColor.FromName(colour1);
         sColour2 = SColor.FromName(colour2);

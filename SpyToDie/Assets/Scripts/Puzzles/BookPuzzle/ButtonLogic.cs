@@ -47,6 +47,7 @@ public class ButtonLogic : MonoBehaviour
         }
         else
         {
+            NumberPad.isSolved = true;
             simpleEvent.Invoke();
         }
     }

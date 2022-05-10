@@ -1,10 +1,12 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class QuestPaperScript : MonoBehaviour
 {
     public GameObject questPaper, smallQuestPaper, firstCheckMark, secondCheckMark, thirdCheckMark;
+    
     // Update is called once per frame
-    void Update()
+    void Update() 
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
@@ -14,7 +16,7 @@ public class QuestPaperScript : MonoBehaviour
                 questPaper.SetActive(false);
             }
             else
-            {
+            {                
                 smallQuestPaper.SetActive(false);
                 questPaper.SetActive(true);
             }

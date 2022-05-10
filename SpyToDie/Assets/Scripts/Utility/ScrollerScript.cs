@@ -10,7 +10,7 @@ public class ScrollerScript : MonoBehaviour
     [Header("Scrolling text:")]
     public TMP_Text text;
     [Header("Scrolling speed:")]
-    public int scrollSpeed;
+    public float scrollSpeed;
     [Header("Scrolling speed:")]
     public float scrollEdge;
 
@@ -29,7 +29,7 @@ public class ScrollerScript : MonoBehaviour
         }
     }
 
-    void ResetScene()
+    public void ResetScene()
     {
         text.transform.position = new Vector3(0, -1100, 0);
         SceneManager.LoadScene("MainMenu");

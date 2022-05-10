@@ -24,5 +24,14 @@ public class CheckTrashPuzzle : MonoBehaviour
             simpleEvent.Invoke();
         }
     }
+    public void AutoSolve()
+    {
+        GameObject.Find("PuzzleObject1").GetComponent<TrashCanPuzzle>().isActive = true;
+        GameObject.Find("PuzzleObject2").GetComponent<TrashCanPuzzle>().isActive = true;
+        GameObject.Find("PuzzleObject3").GetComponent<TrashCanPuzzle>().isActive = true;
+        GameObject.Find("PuzzleObject4").GetComponent<TrashCanPuzzle>().isActive = true;
+        GameObject.Find("PuzzleObject5").GetComponent<TrashCanPuzzle>().isActive = true;
+        isSolved = true;
+    }
 
 }
