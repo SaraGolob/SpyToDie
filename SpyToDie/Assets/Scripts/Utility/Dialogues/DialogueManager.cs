@@ -15,6 +15,8 @@ public class DialogueManager : MonoBehaviour
     private bool isTyping;
     private DialogueScriptableObject currentDialogue;
     private string completeText;
+    public bool dialogueFinsihed = false;
+    
     void Awake()
     {
         if(instance == null)
@@ -42,6 +44,7 @@ public class DialogueManager : MonoBehaviour
     }
     public void QueueDialogue(DialogueScriptableObject dialogue)
     {
+        dialogueFinsihed = false ;
         if (InDialogue)
         {
             return;
@@ -98,6 +101,9 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(Buffer());
         InDialogue = false;
         References.instance.playerMovement.PauseMovement = false;
+        dialogueFinsihed = true;
+
+
     }
     public IEnumerator Buffer()
     {
