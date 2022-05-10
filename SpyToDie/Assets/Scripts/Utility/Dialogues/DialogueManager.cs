@@ -16,6 +16,7 @@ public class DialogueManager : MonoBehaviour
     private DialogueScriptableObject currentDialogue;
     private string completeText;
     public bool dialogueFinsihed = false;
+    public bool isInDialogue = false;   
     
     void Awake()
     {
@@ -44,6 +45,7 @@ public class DialogueManager : MonoBehaviour
     }
     public void QueueDialogue(DialogueScriptableObject dialogue)
     {
+        isInDialogue = true;
         dialogueFinsihed = false ;
         if (InDialogue)
         {
@@ -102,6 +104,7 @@ public class DialogueManager : MonoBehaviour
         InDialogue = false;
         References.instance.playerMovement.PauseMovement = false;
         dialogueFinsihed = true;
+        isInDialogue = false;
 
 
     }
