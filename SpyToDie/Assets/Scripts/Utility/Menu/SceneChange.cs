@@ -5,7 +5,7 @@ public class SceneChange : MonoBehaviour
 {
 
     public static bool hasFinished;
-    public static bool gameStarted=false;
+    public static bool gameStarted;
     private void Start()
     {
         CheckTrashPuzzle.isSolved = false;
@@ -23,6 +23,6 @@ public class SceneChange : MonoBehaviour
         else if (Timer.currentTime<=0 && gameStarted)
         { 
             SceneManager.LoadScene("TextScroller");
-         }
+        }
     }
 }

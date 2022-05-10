@@ -31,6 +31,7 @@ public class Timer : MonoBehaviour
         {
             currentTime = startTimer;
         }
+        
     }
     void Update()
     {
@@ -44,11 +45,11 @@ public class Timer : MonoBehaviour
                 currentTime = endingTime;
                 timerText.color = Color.red;
                 enabled = false;
-
+                SceneChange.gameStarted = true;
             }
         }
-       
-        SetTimerText();
+
+            SetTimerText();
     }
 
     private void SetTimerText()
