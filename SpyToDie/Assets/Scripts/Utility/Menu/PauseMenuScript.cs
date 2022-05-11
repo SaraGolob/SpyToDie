@@ -8,6 +8,7 @@ public class PauseMenuScript : MonoBehaviour
     [Tooltip("The pause menu scene")] public GameObject pauseMenu;
     public UnityEvent simpleEventPause;
     public UnityEvent simpleEventUnpause;
+    public bool canOpen = true;
 
     public void Start()
     {
