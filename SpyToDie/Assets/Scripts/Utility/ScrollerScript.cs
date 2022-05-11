@@ -33,5 +33,6 @@ public class ScrollerScript : MonoBehaviour
     {
         text.transform.position = new Vector3(0, -1100, 0);
         SceneManager.LoadScene("MainMenu");
+        SceneChange.gameStarted = false;
     }
 }

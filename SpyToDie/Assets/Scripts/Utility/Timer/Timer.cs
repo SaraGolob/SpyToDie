@@ -22,7 +22,7 @@ public class Timer : MonoBehaviour
     
     void Start()
     {
-
+        
         if (currentTimeInMinutes) //converts time to seconds in case we input minutes
         {
             currentTime = startTimer * 60;
@@ -47,7 +47,7 @@ public class Timer : MonoBehaviour
                 enabled = false;
                 SceneChange.gameStarted = true;
             }
-        }
+        }        
 
             SetTimerText();
     }
