@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class Timer : MonoBehaviour
 {
     [Header("Component")]
     public TMP_Text timerText;
-
     [Header("Timer Settings")]
     [Tooltip("Set this to true if inputed time is in minutes")] public bool currentTimeInMinutes;
-    [Tooltip("Time at the point we start counting")] public float startTimer;
+    [Tooltip("Time at the point we start counting")] public float startTimer;    
     public static float currentTime;
     [Tooltip("Time the timer has to reach")] public float endingTime;
 
