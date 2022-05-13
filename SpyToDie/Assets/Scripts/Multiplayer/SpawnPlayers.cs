@@ -18,7 +18,7 @@ public class SpawnPlayers : MonoBehaviour
     {
         Vector3 randomPos = new Vector3(0, 0, 0);
         PhotonNetwork.Instantiate(IDObject.name, randomPos, Quaternion.identity);
-        text.text = TransferableVariabels.ID;
+        //text.text = TransferableVariabels.ID;
              
         if (PhotonNetwork.NickName == "Player1")
         {

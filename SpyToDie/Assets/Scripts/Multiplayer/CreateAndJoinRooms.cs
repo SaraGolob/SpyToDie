@@ -15,7 +15,7 @@ public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
         int third = Random.Range(0, 9);
         first += second + third;
         string roomID = first.ToString();
-        TransferableVariabels.ID = roomID;
+        //TransferableVariabels.ID = roomID;
         PhotonNetwork.CreateRoom(roomID);
         PhotonNetwork.NickName = "Player1";
     }
