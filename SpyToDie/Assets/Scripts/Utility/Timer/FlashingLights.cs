@@ -12,6 +12,7 @@ public class FlashingLights : MonoBehaviour
 
     private void Start()
     {
+        globalLight.intensity = 0.4f;
         flashReset = flashingSpeed;
     }
     // Update is called once per frame
