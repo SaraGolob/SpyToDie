@@ -863,7 +863,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomInputField: {fileID: 1515393452}
   roomName: {fileID: 0}
-  roomItemPrefabs: {fileID: -4005848601071423503, guid: f6a6cb98497ca5a449ea0aa4c663dd1a, type: 3}
+  roomItemPrefabs: {fileID: -4005848601071423503, guid: f12c19502f3d6f2449b129ebca738083, type: 3}
   contentObject: {fileID: 2063971939}
 --- !u!4 &220856214
 Transform:
