@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TutorialControls.unity
     guid: b44df4ad043377845afa548cc4878be1
   - enabled: 1
+    path: Assets/Scenes/MultiPlayerMainScene.unity
+    guid: b922959e5effe354eafb2ca94a62fc40
+  - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: d2509bf1afbf94648aee633c53bb7ef1
   - enabled: 1
