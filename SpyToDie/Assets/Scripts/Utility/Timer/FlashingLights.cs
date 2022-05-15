@@ -12,7 +12,7 @@ public class FlashingLights : MonoBehaviour
 
     private void Start()
     {
-        globalLight.intensity = 0.4f;
+        
         flashReset = flashingSpeed;
     }
     // Update is called once per frame
@@ -23,6 +23,7 @@ public class FlashingLights : MonoBehaviour
             flashingSpeed -= Time.deltaTime;
             if (flashingSpeed < 0)
             {
+                globalLight.intensity = 0.8f;
                 if (globalLight.color == color1)
                 { 
                     globalLight.color = color2;

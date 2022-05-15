@@ -12693,8 +12693,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 478a8c14ccdb11745b508f86ab917cd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color1: {r: 0.18262726, g: 0.29143697, b: 0.6792453, a: 1}
-  color2: {r: 0.7735849, g: 0, b: 0.17071085, a: 1}
+  color1: {r: 0.14538093, g: 0.7243914, b: 0.9339623, a: 1}
+  color2: {r: 1, g: 0, b: 0.22335052, a: 1}
   globalLight: {fileID: 1243046840}
   flashingSpeed: 0.6
   flashReset: 0
@@ -19024,8 +19024,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 1607481006}
-  currentTimeInMinutes: 0
-  startTimer: 15
+  currentTimeInMinutes: 1
+  startTimer: 10
   endingTime: 0
   hasPenalty: 1
   penaltySeconds: 10
