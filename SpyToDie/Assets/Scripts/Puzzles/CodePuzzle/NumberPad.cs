@@ -33,6 +33,7 @@ public class NumberPad : MonoBehaviour
         {
             isSolved = true;
             simpleEvent.Invoke();
+            FindObjectOfType<AudioManager>().Play("PuzzleCompleted");
         }
         else
         {

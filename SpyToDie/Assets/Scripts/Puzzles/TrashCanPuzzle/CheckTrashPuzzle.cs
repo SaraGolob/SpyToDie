@@ -24,6 +24,7 @@ public class CheckTrashPuzzle : MonoBehaviour
             if (isSolved)
             {
                 simpleEvent.Invoke();
+                FindObjectOfType<AudioManager>().Play("PuzzleCompleted");
             }
         }
     }

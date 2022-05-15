@@ -43,6 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 254b6cb0c28a8ac4ea2e17524a75bd89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backgroundMusic: EndSong
   sounds:
   - name: PuzzleCompleted
     clip: {fileID: 8300000, guid: e8758165639bd014fa61847557f65cc0, type: 3}
@@ -52,13 +53,19 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Theme
     clip: {fileID: 8300000, guid: c9b4b42e4565107479863b550e391280, type: 3}
-    volume: 0.426
+    volume: 0.15
     pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: MenuSong
     clip: {fileID: 8300000, guid: c8f4746c4ff518841aed3c523929e1d8, type: 3}
-    volume: 0.426
+    volume: 0.15
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: EndSong
+    clip: {fileID: 8300000, guid: 9d8aad4fdea491f4ba4bc15bfc3e98e9, type: 3}
+    volume: 0.15
     pitch: 1
     loop: 1
     source: {fileID: 0}
