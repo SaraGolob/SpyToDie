@@ -18,7 +18,7 @@ public class FlashingLights : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Timer.currentTime <= 10)
+        if (Timer.currentTime <= 30)
         {
             flashingSpeed -= Time.deltaTime;
             if (flashingSpeed < 0)
