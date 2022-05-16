@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class PadlockScript : MonoBehaviour
 {
+    public Image image;
+    public Sprite sprite;
+
     public Text first, second, third, fourth;
 
     public string correctCode;
@@ -17,10 +20,7 @@ public class PadlockScript : MonoBehaviour
 
         if (enteredCode == correctCode)
         {
-            first.text = "ö";
-            second.text = "ö";
-            third.text = "ö";
-            fourth.text = "ö";
+            image.sprite = sprite;
         }
     }
 }
