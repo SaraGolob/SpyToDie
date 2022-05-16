@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PauseMenuScript : MonoBehaviour
 {
@@ -8,14 +9,16 @@ public class PauseMenuScript : MonoBehaviour
     [Tooltip("The pause menu scene")] public GameObject pauseMenu;
     public UnityEvent simpleEventPause;
     public UnityEvent simpleEventUnpause;
-
+    public static bool canPause { get ; set; }
+     
     public void Start()
     {
+        canPause = true;
         isPaused = false;
     }
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && !isPaused)
+        if (Input.GetKeyDown(KeyCode.Escape) && !isPaused && !DialogueManager.instance.isInDialogue && canPause)
         {
             simpleEventPause.Invoke();
             ChangePause();
@@ -35,4 +38,5 @@ public class PauseMenuScript : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+    
 }

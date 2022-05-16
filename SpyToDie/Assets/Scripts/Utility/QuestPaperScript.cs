@@ -4,7 +4,7 @@ using UnityEngine.Events;
 public class QuestPaperScript : MonoBehaviour
 {
     public GameObject questPaper, smallQuestPaper, firstCheckMark, secondCheckMark, thirdCheckMark;
-    
+    public UnityEvent resetColor;
     // Update is called once per frame
     void Update() 
     {
@@ -12,11 +12,13 @@ public class QuestPaperScript : MonoBehaviour
         {
             if (questPaper.activeSelf)
             {
+                resetColor.Invoke();
                 smallQuestPaper.SetActive(true);
                 questPaper.SetActive(false);
             }
             else
-            {                
+            {
+                resetColor.Invoke();
                 smallQuestPaper.SetActive(false);
                 questPaper.SetActive(true);
             }
