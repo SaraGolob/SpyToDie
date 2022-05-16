@@ -14,13 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueInfo:
   - dialogue: e..l.oo?! Can you.. ear me? This is your partner speaking!! WAKE UP!
-  - dialogue: Pull yourself together! You need to get out of there! They are coming!
   - dialogue: What happened you ask? You mixed the wrong potions and explosion knocked
       you out for a bit.
-  - dialogue: The sound alerted the authorities and they are on their way! You have
-      10 minutes to get out!
+  - dialogue: But it's okay. It seems like you haven't triggered any alarms just
+      yet. Just stay calm and continue your mission.
   - dialogue: You need to find the formula they are refusing to release to the world
-      before you are caught. Don't worry I will help you get out of there. We are
-      in this together.
-  - dialogue: Now hurry up! Not much time left! Find where the formula is locked
-      and get out of there!!
+      before you are caught. Come on it's hidden somewhere here.
+  - dialogue: Don't worry I will help you get out of there. We are in this together.
+  - dialogue: Alright where were we...
