@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 254b6cb0c28a8ac4ea2e17524a75bd89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundMusic: EndSong
+  backgroundMusic: 
   sounds:
   - name: PuzzleCompleted
     clip: {fileID: 8300000, guid: e8758165639bd014fa61847557f65cc0, type: 3}
