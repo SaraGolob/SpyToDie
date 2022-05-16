@@ -85,6 +85,7 @@ public class ButtonLogic : MonoBehaviour
             if (Enumerable.SequenceEqual(enteredColours, correctColours))
             {
                 isSolved = true;
+                FindObjectOfType<AudioManager>().Play("PuzzleCompleted");
             }
             else
             {

@@ -37,7 +37,7 @@ public class Timer : MonoBehaviour
     {
         
         currentTime -= Time.deltaTime;
-        if (currentTime <= 10 )
+        if (currentTime <= 30 )
         {
             timerText.color = Color.red;
             if (currentTime <= endingTime)
