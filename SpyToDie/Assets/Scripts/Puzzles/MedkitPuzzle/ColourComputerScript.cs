@@ -81,7 +81,7 @@ public class ColourComputerScript : MonoBehaviour
             if (Enumerable.SequenceEqual(enteredColours, correctColours))
             {
                 isSolved = true;
-                FindObjectOfType<AudioManager>().Play("PuzzleCompleted");
+                //FindObjectOfType<AudioManager>().Play("PuzzleCompleted");
             }
             else
             {
