@@ -29368,12 +29368,36 @@ PrefabInstance:
       value: Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2740645824495758936, guid: c6c2511637e288942ab0cb1c584647d8, type: 3}
+      propertyPath: sounds.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740645824495758936, guid: c6c2511637e288942ab0cb1c584647d8, type: 3}
+      propertyPath: sounds.Array.data[5].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3e5dfd897324fab4c8567da37c651768, type: 3}
+    - target: {fileID: 2740645824495758936, guid: c6c2511637e288942ab0cb1c584647d8, type: 3}
+      propertyPath: sounds.Array.data[5].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740645824495758936, guid: c6c2511637e288942ab0cb1c584647d8, type: 3}
+      propertyPath: sounds.Array.data[5].name
+      value: Alarm
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740645824495758936, guid: c6c2511637e288942ab0cb1c584647d8, type: 3}
+      propertyPath: sounds.Array.data[5].pitch
+      value: 0.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740645824495758936, guid: c6c2511637e288942ab0cb1c584647d8, type: 3}
       propertyPath: sounds.Array.data[1].volume
       value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 2740645824495758936, guid: c6c2511637e288942ab0cb1c584647d8, type: 3}
       propertyPath: sounds.Array.data[2].volume
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740645824495758936, guid: c6c2511637e288942ab0cb1c584647d8, type: 3}
+      propertyPath: sounds.Array.data[5].volume
+      value: 0.199
       objectReference: {fileID: 0}
     - target: {fileID: 2740645824495758937, guid: c6c2511637e288942ab0cb1c584647d8, type: 3}
       propertyPath: m_RootOrder

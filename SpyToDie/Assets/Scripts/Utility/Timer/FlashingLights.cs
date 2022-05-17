@@ -9,10 +9,10 @@ public class FlashingLights : MonoBehaviour
     public Light2D globalLight;
     [Tooltip("In seconds")]public float flashingSpeed;
     [HideInInspector] public float flashReset;
+    private bool isPlaying;
 
     private void Start()
     {
-        
         flashReset = flashingSpeed;
     }
     // Update is called once per frame
@@ -34,7 +34,16 @@ public class FlashingLights : MonoBehaviour
                 }
                 flashingSpeed = flashReset;
             }
+
+            if (!isPlaying)
+                PlaySound();
         }
         
+    }
+
+    private void PlaySound()
+    {
+        FindObjectOfType<AudioManager>().Play("Alarm");
+        isPlaying = true;
     }
 }
