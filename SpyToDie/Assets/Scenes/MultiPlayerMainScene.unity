@@ -16300,8 +16300,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ButtonLogic, Assembly-CSharp
+      - m_Target: {fileID: 1923224636}
+        m_TargetAssemblyTypeName: ColourComputerScript, Assembly-CSharp
         m_MethodName: AddToList
         m_Mode: 5
         m_Arguments:
@@ -18227,8 +18227,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ButtonLogic, Assembly-CSharp
+      - m_Target: {fileID: 1923224636}
+        m_TargetAssemblyTypeName: ColourComputerScript, Assembly-CSharp
         m_MethodName: AddToList
         m_Mode: 5
         m_Arguments:
@@ -18824,8 +18824,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ButtonLogic, Assembly-CSharp
+      - m_Target: {fileID: 1923224636}
+        m_TargetAssemblyTypeName: ColourComputerScript, Assembly-CSharp
         m_MethodName: AddToList
         m_Mode: 5
         m_Arguments:
@@ -23802,8 +23802,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ButtonLogic, Assembly-CSharp
+      - m_Target: {fileID: 1923224636}
+        m_TargetAssemblyTypeName: ColourComputerScript, Assembly-CSharp
         m_MethodName: AddToList
         m_Mode: 5
         m_Arguments:
@@ -26357,8 +26357,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ButtonLogic, Assembly-CSharp
+      - m_Target: {fileID: 1923224636}
+        m_TargetAssemblyTypeName: ColourComputerScript, Assembly-CSharp
         m_MethodName: AddToList
         m_Mode: 5
         m_Arguments:
@@ -32653,8 +32653,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ButtonLogic, Assembly-CSharp
+      - m_Target: {fileID: 1923224636}
+        m_TargetAssemblyTypeName: ColourComputerScript, Assembly-CSharp
         m_MethodName: AddToList
         m_Mode: 5
         m_Arguments:
