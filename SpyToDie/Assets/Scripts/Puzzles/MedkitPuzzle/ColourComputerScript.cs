@@ -42,10 +42,6 @@ public class ColourComputerScript : MonoBehaviour
             AssignColours();
             CheckIfCorrect();
         }
-        else
-        {
-            simpleEvent.Invoke();
-        }
     }
 
     public void AddToList(string colour)
@@ -81,7 +77,8 @@ public class ColourComputerScript : MonoBehaviour
             if (Enumerable.SequenceEqual(enteredColours, correctColours))
             {
                 isSolved = true;
-                //FindObjectOfType<AudioManager>().Play("PuzzleCompleted");
+                FindObjectOfType<AudioManager>().Play("PuzzleCompleted");
+                simpleEvent.Invoke();
             }
             else
             {

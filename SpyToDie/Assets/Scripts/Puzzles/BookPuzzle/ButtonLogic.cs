@@ -45,11 +45,6 @@ public class ButtonLogic : MonoBehaviour
             AssignColours();
             CheckIfCorrect();
         }
-        else
-        {
-            NumberPad.isSolved = true;
-            simpleEvent.Invoke();
-        }
     }
 
     public void AddToList(string colour)
@@ -86,6 +81,9 @@ public class ButtonLogic : MonoBehaviour
             {
                 isSolved = true;
                 FindObjectOfType<AudioManager>().Play("PuzzleCompleted");
+
+                NumberPad.isSolved = true;
+                simpleEvent.Invoke();
             }
             else
             {
