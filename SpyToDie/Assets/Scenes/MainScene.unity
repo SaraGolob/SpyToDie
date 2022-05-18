@@ -19216,8 +19216,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 1607481006}
-  currentTimeInMinutes: 0
-  startTimer: 30
+  currentTimeInMinutes: 1
+  startTimer: 1
   endingTime: 0
   hasPenalty: 1
   penaltySeconds: 10
