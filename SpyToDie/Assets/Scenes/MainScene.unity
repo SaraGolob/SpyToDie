@@ -24977,11 +24977,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  puzzleObject1: 0
-  puzzleObject2: 0
-  puzzleObject3: 0
-  puzzleObject4: 0
-  puzzleObject5: 0
+  puzzleObject1: {fileID: 1570423443}
+  puzzleObject2: {fileID: 663013876}
+  puzzleObject3: {fileID: 1131316469}
+  puzzleObject4: {fileID: 1849583962}
+  puzzleObject5: {fileID: 126195665}
 --- !u!1 &1921962670
 GameObject:
   m_ObjectHideFlags: 0
