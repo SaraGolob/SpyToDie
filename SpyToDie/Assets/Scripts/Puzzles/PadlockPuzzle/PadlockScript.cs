@@ -6,7 +6,10 @@ using UnityEngine.UI;
 public class PadlockScript : MonoBehaviour
 {
     public Image image;
-    public Sprite sprite;
+    public Sprite spriteOfLocker;
+    public GameObject doorObjectClose;
+    public GameObject doorObjectOpen;
+    
 
     public Text first, second, third, fourth;
 
@@ -20,7 +23,9 @@ public class PadlockScript : MonoBehaviour
 
         if (enteredCode == correctCode)
         {
-            image.sprite = sprite;
+            image.sprite = spriteOfLocker;
+            doorObjectClose.SetActive(false);
+            doorObjectOpen.SetActive(true);
         }
     }
 }
