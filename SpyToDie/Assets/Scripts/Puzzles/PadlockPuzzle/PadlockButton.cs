@@ -6,9 +6,18 @@ using UnityEngine.UI;
 public class PadlockButton : MonoBehaviour
 {
     public Text number;
+    public bool done;
 
     public void ButtonPressed()
     {
-        number.text = ((int.Parse(number.text) + 1) % 10).ToString();
+        if (!done)
+        {
+            number.text = ((int.Parse(number.text) + 1) % 10).ToString();
+        }
+    }
+
+    public void StopClick()
+    {
+        done = true;
     }
 }

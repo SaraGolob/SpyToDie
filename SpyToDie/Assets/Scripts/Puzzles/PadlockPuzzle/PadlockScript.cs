@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class PadlockScript : MonoBehaviour
 {
     public Image image;
-    public Sprite spriteOfLocker;
-    public GameObject doorObjectClose;
-    public GameObject doorObjectOpen;
+    public Sprite unlocked;
     
 
     public Text first, second, third, fourth;
@@ -17,15 +16,16 @@ public class PadlockScript : MonoBehaviour
 
     private string enteredCode;
 
+    public UnityEvent simpleEvent;
+
     void Update()
     {
         enteredCode = first.text + second.text + third.text + fourth.text;
 
         if (enteredCode == correctCode)
         {
-            image.sprite = spriteOfLocker;
-            doorObjectClose.SetActive(false);
-            doorObjectOpen.SetActive(true);
+            image.sprite = unlocked;
+            simpleEvent.Invoke();
         }
     }
 }
