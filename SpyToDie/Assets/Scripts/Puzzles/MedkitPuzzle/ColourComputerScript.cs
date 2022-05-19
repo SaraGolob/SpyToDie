@@ -13,7 +13,7 @@ public class ColourComputerScript : MonoBehaviour
     List<SColor> sColours;
 
     [Header("Images")]
-    public Image box1, box2, box3, box4;
+    public Image box1, box2, box3, box4, box5, box6;
 
     [Header("Event")]
     public UnityEvent simpleEvent;
@@ -25,6 +25,8 @@ public class ColourComputerScript : MonoBehaviour
         enteredColours = new List<string>();
         correctColours = new List<string>
         {
+            "BLUE",
+            "BLUE",
             "BLUE",
             "BLUE",
             "BLUE",
@@ -52,7 +54,7 @@ public class ColourComputerScript : MonoBehaviour
     void ReadColours()
     {
         sColours.Clear(); //clears all colours
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < 6; i++)
         {
             sColours.Add(SColor.FromName("WHITE")); //replace all colours with white
         }
@@ -72,7 +74,7 @@ public class ColourComputerScript : MonoBehaviour
     }
     void CheckIfCorrect()
     {
-        if (enteredColours.Count == 4)
+        if (enteredColours.Count == 6)
         {
             if (Enumerable.SequenceEqual(enteredColours, correctColours))
             {
