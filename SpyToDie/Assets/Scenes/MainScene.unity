@@ -19028,8 +19028,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  controlsMenu: {fileID: 0}
-  optionsMenu: {fileID: 0}
+  controlsMenu: {fileID: 746526002}
+  optionsMenu: {fileID: 998668643}
 --- !u!4 &1340071530
 Transform:
   m_ObjectHideFlags: 0

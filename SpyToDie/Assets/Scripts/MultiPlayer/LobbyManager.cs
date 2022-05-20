@@ -59,9 +59,12 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
         foreach(RoomInfo room in list)
         {
-            RoomItem newRoom = Instantiate(roomItemPrefabs, contentObject);
-            newRoom.SetRoomName(room.Name);
-            roomItemsList.Add(newRoom);
+            if (room.PlayerCount < 2)
+            {
+                RoomItem newRoom = Instantiate(roomItemPrefabs, contentObject);
+                newRoom.SetRoomName(room.Name);
+                roomItemsList.Add(newRoom);
+            }
         }
     }
     public void JoinRoom(string roomName)
