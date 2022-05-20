@@ -1,3 +1,4 @@
+using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -31,6 +32,11 @@ public class MenuScript : MonoBehaviour
     public void LoadMultiPlayer()
     {
         SceneManager.LoadScene("LoadingMultiplayerScreen");
+    }
+    public void DisconnectMultiplayer()
+    {
+        PhotonNetwork.Disconnect();
+        SceneManager.LoadScene("MainMenu");
     }
     public void ClearInput()
     {

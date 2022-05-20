@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class LobbyManager : MonoBehaviourPunCallbacks
@@ -17,6 +18,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public RoomItem roomItemPrefabs;
     List<RoomItem> roomItemsList = new List<RoomItem>();
     public Transform contentObject;
+    public UnityEvent errorMessage;
     private void Start()
     {
         PhotonNetwork.JoinLobby();
@@ -27,6 +29,13 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         if (roomInputField.text.Length >= 1)
         {
             PhotonNetwork.CreateRoom(roomInputField.text, new RoomOptions() { MaxPlayers = 2 });
+        }
+        for (int i = 0; i < roomItemsList.Count; i++)
+        {
+            if ( roomInputField.text == roomItemsList[i].roomName.text )
+            {
+                errorMessage.Invoke();
+            }
         }
         
     }
