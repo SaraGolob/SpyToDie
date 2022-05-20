@@ -71,6 +71,10 @@ public class ColourComputerScript : MonoBehaviour
         box2.color = new Color(sColours[1].R, sColours[1].G, sColours[1].B);
         box3.color = new Color(sColours[2].R, sColours[2].G, sColours[2].B);
         box4.color = new Color(sColours[3].R, sColours[3].G, sColours[3].B);
+        box5.color = new Color(sColours[4].R, sColours[4].G, sColours[4].B);
+        box6.color = new Color(sColours[5].R, sColours[5].G, sColours[5].B);
+
+
     }
     void CheckIfCorrect()
     {
