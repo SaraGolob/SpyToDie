@@ -18,7 +18,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public RoomItem roomItemPrefabs;
     List<RoomItem> roomItemsList = new List<RoomItem>();
     public Transform contentObject;
-    public UnityEvent errorMessage;
+    public UnityEvent errorMessageDuplicate, errorMessageLength;
     private void Start()
     {
         PhotonNetwork.JoinLobby();
@@ -26,15 +26,19 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public void OnClickCreate()
     {
         PhotonNetwork.NickName = "Player1";
-        if (roomInputField.text.Length >= 1)
+        if (roomInputField.text.Length >= 1 && roomInputField.text.Length <=10)
         {
             PhotonNetwork.CreateRoom(roomInputField.text, new RoomOptions() { MaxPlayers = 2 });
+        }
+        else
+        {
+            errorMessageLength.Invoke();
         }
         for (int i = 0; i < roomItemsList.Count; i++)
         {
             if ( roomInputField.text == roomItemsList[i].roomName.text )
             {
-                errorMessage.Invoke();
+                errorMessageDuplicate.Invoke();
             }
         }
         
