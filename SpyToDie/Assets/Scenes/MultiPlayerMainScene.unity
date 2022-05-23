@@ -18635,8 +18635,8 @@ Transform:
   - {fileID: 1360533237}
   - {fileID: 631513981}
   - {fileID: 1730388100}
-  - {fileID: 1438820388}
   - {fileID: 1425569386}
+  - {fileID: 1438820388}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -27491,7 +27491,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 582119536}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1425569387
 MonoBehaviour:
@@ -30213,7 +30213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 2010300391}
   currentTimeInMinutes: 1
-  startTimer: 2
+  startTimer: 30
   endingTime: 0
   hasPenalty: 1
   penaltySeconds: 10
@@ -31096,7 +31096,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: A=1 E=5
+  m_text: A = 1 E = 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 90d60781418841749951f70cd3b23796, type: 2}
   m_sharedMaterial: {fileID: -3857888365623043749, guid: 985a05c855d6d9445a4678d55645972f, type: 2}
