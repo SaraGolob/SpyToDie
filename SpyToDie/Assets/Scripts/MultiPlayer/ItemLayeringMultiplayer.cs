@@ -7,34 +7,37 @@ public class ItemLayeringMultiplayer : MonoBehaviour
 {
     // Start is called before the first frame update
     private SpriteRenderer spriteRenderer;
-
-
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();       
     }
-
     void Update()
     {
-        if (GameManager.instance.players[0] == true)
+        if (GameManager.instance.players[0].activeInHierarchy == true)
         {
             if (transform.position.y < GameManager.instance.players[0].transform.transform.position.y)
             {
                 spriteRenderer.sortingLayerName = "Foreground";
+                return;
             }
             else
             {
                 spriteRenderer.sortingLayerName = "Background";
+                return;
             }
         }
-        else if(GameManager.instance.players[1] == true)
-        if (transform.position.y < GameManager.instance.players[1].transform.transform.position.y)
+        if(GameManager.instance.players[1].activeInHierarchy == true)
         {
-            spriteRenderer.sortingLayerName = "Foreground";
-        }
-        else
-        {
-            spriteRenderer.sortingLayerName = "Background";
+            if (transform.position.y < GameManager.instance.players[1].transform.transform.position.y)
+            {
+                spriteRenderer.sortingLayerName = "Foreground";
+                return;
+            }
+            else
+            {
+                spriteRenderer.sortingLayerName = "Background";
+                return;
+            }
         }
     }
 }
