@@ -9,10 +9,9 @@ using UnityEngine.UI;
 
 public class LobbyManager : MonoBehaviourPunCallbacks
 {
-    // Start is called before the first frame update
+   
     public TMP_InputField roomInputField;
-    //public GameObject lobbyPanel;
-    //public GameObject roomPanel;
+ 
     public Text roomName;
 
     public RoomItem roomItemPrefabs;
@@ -45,8 +44,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     }
     public override void OnJoinedRoom()
     {
-        //lobbyPanel.SetActive(false);
-        //roomPanel.SetActive(true);
+
         roomInputField.text = PhotonNetwork.CurrentRoom.Name;
     }
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
