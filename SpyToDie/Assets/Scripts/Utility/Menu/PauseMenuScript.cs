@@ -31,8 +31,8 @@ public class PauseMenuScript : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Escape) &&(controlsMenu.activeSelf || optionsMenu.activeSelf))
         {
-            controlsMenu.active = false;
-            optionsMenu.active = false;
+            controlsMenu.SetActive(false);
+            optionsMenu.SetActive(false);
             canPause = true;
             isPaused = false;
         }
