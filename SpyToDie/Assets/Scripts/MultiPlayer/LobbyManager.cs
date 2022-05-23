@@ -16,11 +16,15 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
     public RoomItem roomItemPrefabs;
     List<RoomItem> roomItemsList = new List<RoomItem>();
+
     public Transform contentObject;
     public UnityEvent errorMessageDuplicate, errorMessageLength;
     private void Start()
     {
         PhotonNetwork.JoinLobby();
+        
+       
+        
     }
     public void OnClickCreate()
     {
@@ -39,10 +43,8 @@ public class LobbyManager : MonoBehaviourPunCallbacks
             {
                 errorMessageDuplicate.Invoke();
             }
-        }
-        
-    }
-    
+        }        
+    }    
     public override void OnJoinedRoom()
     {        
         roomInputField.text = PhotonNetwork.CurrentRoom.Name;
@@ -59,7 +61,8 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         }
         roomItemsList.Clear();
 
-        foreach(RoomInfo room in list)
+
+        foreach (RoomInfo room in list)
         {
             if (room.PlayerCount < 2)
             {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Events;
+using Photon.Pun;
 
 public class EndScreenScript : MonoBehaviour
 {
@@ -21,6 +22,10 @@ public class EndScreenScript : MonoBehaviour
     }
     public void MenuButton()
     {
+        if (PhotonNetwork.IsConnected)
+        {
+            PhotonNetwork.Disconnect();
+        }
         SceneManager.LoadScene("MainMenu");
     }
     public void ExitButton()

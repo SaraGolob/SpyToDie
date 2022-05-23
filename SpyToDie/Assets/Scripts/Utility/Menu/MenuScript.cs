@@ -38,9 +38,9 @@ public class MenuScript : MonoBehaviour
     }
     public void LeaveWaitingRoom()
     {
-        
+ 
         PhotonNetwork.Disconnect();
-        SceneManager.LoadScene("LoadingMultiplayerScreen");
+        SceneManager.LoadScene("MainMenu");
 
     }
     public void ClearInput()

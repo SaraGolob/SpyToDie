@@ -40,9 +40,8 @@ public class PasswordScript : MonoBehaviour
     {
         if (password.text == correctPassword)
         {
-            simpleEvent.Invoke();
-            SceneChange.hasFinished = true;
-            SceneManager.LoadScene("EndScreen");
+            MultiSceneChange.customProperties[0] = 1 ;
+            simpleEvent.Invoke();            
         }
         else
         {
