@@ -40,7 +40,7 @@ public class PasswordScript : MonoBehaviour
     {
         if (password.text == correctPassword)
         {
-            MultiSceneChange.customProperties[0] = 1 ;
+            MultiSceneChange.hasWon = true;
             simpleEvent.Invoke();            
         }
         else

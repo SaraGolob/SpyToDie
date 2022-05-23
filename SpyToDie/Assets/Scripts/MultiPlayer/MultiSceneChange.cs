@@ -7,13 +7,13 @@ using UnityEngine.SceneManagement;
 public class MultiSceneChange : MonoBehaviour
 {
     // Start is called before the first frame update
-    private int hasWon;   
-    public static ExitGames.Client.Photon.Hashtable customProperties = new ExitGames.Client.Photon.Hashtable();
+    public static bool hasWon;   
+   
  
     private void Start()
     {
-        PhotonNetwork.CurrentRoom.SetCustomProperties(customProperties);   
-        customProperties.Add(hasWon, 0);
+
+
     }
     // Update is called once per frame
     void Update()
@@ -30,12 +30,12 @@ public class MultiSceneChange : MonoBehaviour
     }
     public void WinCondition()
     {
-        Debug.Log(customProperties);
-        //if((int)customProperties["HasWon"]==1)
-        //{
-        //    SceneChange.hasFinished = true;
-        //    SceneManager.LoadScene("EndScreen");
-        //}
+
+        if (hasWon)
+        {
+            SceneChange.hasFinished = true;
+            SceneManager.LoadScene("EndScreen");
+        }
     }
 
 }
