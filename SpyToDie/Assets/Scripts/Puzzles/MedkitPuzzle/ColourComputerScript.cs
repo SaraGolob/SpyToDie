@@ -25,12 +25,12 @@ public class ColourComputerScript : MonoBehaviour
         enteredColours = new List<string>();
         correctColours = new List<string>
         {
+            "GREEN",
+            "BLUE",
+            "GREEN",
             "BLUE",
             "BLUE",
-            "BLUE",
-            "BLUE",
-            "BLUE",
-            "BLUE"
+            "RED"
         };
         isSolved = false;
     }

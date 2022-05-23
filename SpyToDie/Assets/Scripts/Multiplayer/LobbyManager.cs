@@ -42,9 +42,9 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         }
         
     }
+    
     public override void OnJoinedRoom()
-    {
-
+    {        
         roomInputField.text = PhotonNetwork.CurrentRoom.Name;
     }
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
