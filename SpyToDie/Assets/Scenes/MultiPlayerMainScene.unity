@@ -19133,7 +19133,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 431584903}
   m_LocalRotation: {x: -0, y: -0.0067304014, z: -0, w: 0.99997735}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.2427}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1183140126}
@@ -19141,8 +19141,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -0.771, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 500, y: 500}
+  m_AnchoredPosition: {x: -44.031097, y: 12.007}
+  m_SizeDelta: {x: 403.825, y: 491.9861}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &431584905
 MonoBehaviour:
@@ -19167,7 +19167,7 @@ MonoBehaviour:
   m_text: "I think \nthe Food \nin the Fridge \nis Delicious..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 90d60781418841749951f70cd3b23796, type: 2}
-  m_sharedMaterial: {fileID: -3857888365623043749, guid: 985a05c855d6d9445a4678d55645972f, type: 2}
+  m_sharedMaterial: {fileID: 8734551190140604391, guid: 90d60781418841749951f70cd3b23796, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -19227,7 +19227,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -234.76178, y: 0, z: -213.20282, w: 0}
+  m_margin: {x: -2.4232025, y: 0, z: 1.109909, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 1
@@ -21685,7 +21685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 675180cccd8bc2c48b741bff9564de1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 0}
+  pauseMenu: {fileID: 1164734764}
   simpleEventPause:
     m_PersistentCalls:
       m_Calls:
@@ -35950,7 +35950,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1865513882}
   m_LocalRotation: {x: -0, y: -0.0067304014, z: -0, w: 0.99997735}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.6203}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 361968162}
@@ -35958,8 +35958,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -0.771, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 500, y: 500}
+  m_AnchoredPosition: {x: -46.079712, y: 24.0416}
+  m_SizeDelta: {x: 407.8323, y: 580.1385}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1865513884
 MonoBehaviour:
@@ -35981,10 +35981,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: A = 1 E = 5
+  m_text: "\nA = 1 \n\nE = 5"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 90d60781418841749951f70cd3b23796, type: 2}
-  m_sharedMaterial: {fileID: -3857888365623043749, guid: 985a05c855d6d9445a4678d55645972f, type: 2}
+  m_sharedMaterial: {fileID: 8734551190140604391, guid: 90d60781418841749951f70cd3b23796, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -36044,10 +36044,10 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -234.76178, y: 0, z: -213.20282, w: 0}
+  m_margin: {x: 1.5825958, y: -2.00354, z: 1.1090393, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1865513885
@@ -41644,7 +41644,7 @@ GameObject:
   - component: {fileID: 2033732145}
   - component: {fileID: 2033732144}
   m_Layer: 0
-  m_Name: PieCanvas
+  m_Name: FridgeLockCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

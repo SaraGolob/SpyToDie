@@ -42,6 +42,7 @@ public class PasswordScript : MonoBehaviour
         if (password.text == correctPassword)
         {
             simpleEvent.Invoke();
+            SceneChange.hasFinished = true;
             SceneManager.LoadScene("EndScreen");
         }
         else
