@@ -36,7 +36,6 @@ public class PasswordScript : MonoBehaviour
     {
         password.text = password.text.Remove(password.text.Length - 1);
     }
-
     public void CheckPassword()
     {
         if (password.text == correctPassword)

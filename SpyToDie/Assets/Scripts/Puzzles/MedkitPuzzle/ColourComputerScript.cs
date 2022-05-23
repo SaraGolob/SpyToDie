@@ -26,10 +26,10 @@ public class ColourComputerScript : MonoBehaviour
         correctColours = new List<string>
         {
             "GREEN",
-            "BLUE",
+            "CYAN",
             "GREEN",
-            "BLUE",
-            "BLUE",
+            "CYAN",
+            "CYAN",
             "RED"
         };
         isSolved = false;
