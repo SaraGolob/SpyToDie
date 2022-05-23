@@ -5,18 +5,16 @@ using UnityEngine.Tilemaps;
 
 public class MultiMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
+
     [Header("Animation")]
     public Rigidbody2D rigidBody2D;
     public Animator animator;
     [Header("Movement")]
     [Tooltip("this controlls the speed of the character")] public float movementSpeed;
-    //[Header("Tilemap")]
+    
     public Tilemap obstacles;
     public bool PauseMovement { get; set; }
-    //[SerializeField] if you want private to show in inspector
-    //[HideInInspector] if you want public not to show in inspector
-    //[System.Serializable] enums or class to be shown in inspector
+
 
     private Vector2 movement;
     private Vector2 movementThisFrame;

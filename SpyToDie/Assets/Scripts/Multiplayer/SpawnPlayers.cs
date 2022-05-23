@@ -23,14 +23,12 @@ public class SpawnPlayers : MonoBehaviour
         if (PhotonNetwork.NickName == "Player1")
         {
             Player1.SetActive(true);
-            Player2.SetActive(false);
-            //if(GameManager.instance != null){ } Use when not having players in the game
+            Player2.SetActive(false);            
         }
         else if (PhotonNetwork.NickName == "Player2")
         {
             Player1.SetActive(false);
-            Player2.SetActive(true);
-            //References.instance.playerTransform.tag = "Player 2";
+            Player2.SetActive(true);            
         }
     }
 }
