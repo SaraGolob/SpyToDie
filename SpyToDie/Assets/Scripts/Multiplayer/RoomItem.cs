@@ -8,10 +8,10 @@ public class RoomItem : MonoBehaviour
 {
     // Start is called before the first frame update
     public TMP_Text roomName;
-    LobbyManager manaager;
+    LobbyManager manager;
     private void Start()
     {
-        manaager = FindObjectOfType<LobbyManager>();
+        manager = FindObjectOfType<LobbyManager>();
     }
     public void SetRoomName(string sentRoomName)
     {
@@ -19,6 +19,6 @@ public class RoomItem : MonoBehaviour
     }
     public void OnClickItem()
     {
-        manaager.JoinRoom(roomName.text);
+        manager.JoinRoom(roomName.text);
     }
 }

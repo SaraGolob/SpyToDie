@@ -8,14 +8,13 @@ using UnityEngine.UI;
 
 public class LobbyManager : MonoBehaviourPunCallbacks
 {
-    // Start is called before the first frame update
     public TMP_InputField roomInputField;
-    //public GameObject lobbyPanel;
-    //public GameObject roomPanel;
+
     public Text roomName;
 
     public RoomItem roomItemPrefabs;
     List<RoomItem> roomItemsList = new List<RoomItem>();
+
     public Transform contentObject;
     private void Start()
     {
@@ -27,13 +26,10 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         if (roomInputField.text.Length >= 1)
         {
             PhotonNetwork.CreateRoom(roomInputField.text, new RoomOptions() { MaxPlayers = 2 });
-        }
-        
+        }        
     }
     public override void OnJoinedRoom()
-    {
-        //lobbyPanel.SetActive(false);
-        //roomPanel.SetActive(true);
+    {        
         roomInputField.text = PhotonNetwork.CurrentRoom.Name;
     }
     public override void OnRoomListUpdate(List<RoomInfo> roomList)

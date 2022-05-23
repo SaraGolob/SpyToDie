@@ -14,7 +14,7 @@ public class ConnectToServer : MonoBehaviourPunCallbacks
         PhotonNetwork.ConnectUsingSettings();
         if(PhotonNetwork.IsConnected == true)
         {
-            loader.value = 1;
+            loader.value = loader.maxValue;
         }
     }
 
