@@ -9,6 +9,7 @@ public class PauseMenuScript : MonoBehaviour
     [Tooltip("The pause menu scene")] public GameObject pauseMenu;
     public UnityEvent simpleEventPause;
     public UnityEvent simpleEventUnpause;
+    public GameObject controlsMenu, optionsMenu;
     public static bool canPause { get ; set; }
      
     public void Start()
@@ -27,6 +28,13 @@ public class PauseMenuScript : MonoBehaviour
         {
             simpleEventUnpause.Invoke();
             ChangePause();
+        }
+        else if (Input.GetKeyDown(KeyCode.Escape) &&(controlsMenu.activeSelf || optionsMenu.activeSelf))
+        {
+            controlsMenu.active = false;
+            optionsMenu.active = false;
+            canPause = true;
+            isPaused = false;
         }
     }
 

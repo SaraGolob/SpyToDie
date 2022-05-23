@@ -1,3 +1,4 @@
+using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -9,8 +10,6 @@ using UnityEngine.UI;
 
 public class MenuScript : MonoBehaviour
 {
-    public Slider slider;
-    public UnityEvent fullSlider;
     public TMP_InputField input;
     public void SinglePlayerPlayButton()
     {
@@ -31,6 +30,18 @@ public class MenuScript : MonoBehaviour
     public void LoadMultiPlayer()
     {
         SceneManager.LoadScene("LoadingMultiplayerScreen");
+    }
+    public void DisconnectMultiplayer()
+    {
+        PhotonNetwork.Disconnect();
+        SceneManager.LoadScene("MainMenu");
+    }
+    public void LeaveWaitingRoom()
+    {
+        
+        PhotonNetwork.Disconnect();
+        SceneManager.LoadScene("LoadingMultiplayerScreen");
+
     }
     public void ClearInput()
     {

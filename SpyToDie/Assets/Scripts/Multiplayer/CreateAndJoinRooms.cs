@@ -27,7 +27,7 @@ public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()//will be automaticaly called when connected
     {
 
-        PhotonNetwork.LoadLevel("MultiPlayerMainScene");//load a special scene //add onclick event on scene
+        PhotonNetwork.LoadLevel("WaitingRoom");//load a special scene //add onclick event on scene
     }
 
 }

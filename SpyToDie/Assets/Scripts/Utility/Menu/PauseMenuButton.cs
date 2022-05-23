@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class PauseMenuButton : MonoBehaviour
 {
-    public GameObject pauseMenu;
+    public GameObject pauseMenu, optionsMenu, controlsMenu;
     public UnityEvent pause;
     public UnityEvent unPause;
     
@@ -19,7 +19,7 @@ public class PauseMenuButton : MonoBehaviour
             pause.Invoke();
             PauseMenuScript.isPaused=!PauseMenuScript.isPaused;
         }
-        else if (PauseMenuScript.isPaused && pauseMenu.activeSelf)
+        else if (PauseMenuScript.isPaused && (pauseMenu.activeSelf || optionsMenu.activeSelf || controlsMenu.activeSelf))
         {
             unPause.Invoke();
             PauseMenuScript.isPaused = !PauseMenuScript.isPaused;
