@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using Photon.Pun;
 
 public class PasswordScript : MonoBehaviour
 {
@@ -40,7 +41,7 @@ public class PasswordScript : MonoBehaviour
     {
         if (password.text == correctPassword)
         {
-            MultiSceneChange.HasWon = true;
+            PhotonNetwork.CurrentRoom.MaxPlayers = 3;
             simpleEvent.Invoke();            
         }
         else

@@ -18,6 +18,10 @@ public class MultiSceneChange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(PhotonNetwork.CurrentRoom.MaxPlayers>2)
+        {
+            HasWon = true;
+        }
         LooseCondition();
         WinCondition();
     }
