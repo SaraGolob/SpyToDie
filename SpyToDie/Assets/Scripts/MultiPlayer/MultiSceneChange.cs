@@ -38,6 +38,7 @@ public class MultiSceneChange : MonoBehaviour
         if (HasWon)
         {
             SceneChange.hasFinished = true;
+            PhotonNetwork.Disconnect();
             SceneManager.LoadScene("EndScreen");
         }
     }
