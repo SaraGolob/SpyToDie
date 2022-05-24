@@ -16,11 +16,15 @@ public class PauseMenuButton : MonoBehaviour
     {
         if (!PauseMenuScript.isPaused && !DialogueManager.instance.isInDialogue && PauseMenuScript.canPause)
         {
+            pauseMenu.SetActive(true);
             pause.Invoke();
             PauseMenuScript.isPaused=!PauseMenuScript.isPaused;
         }
         else if (PauseMenuScript.isPaused && (pauseMenu.activeSelf || optionsMenu.activeSelf || controlsMenu.activeSelf))
         {
+            pauseMenu.SetActive(false);
+            optionsMenu.SetActive(false);
+            controlsMenu.SetActive(false);
             unPause.Invoke();
             PauseMenuScript.isPaused = !PauseMenuScript.isPaused;
         }

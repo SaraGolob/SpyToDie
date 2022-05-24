@@ -51,4 +51,5 @@ public class MultiMovement : MonoBehaviour
             animator.SetBool("isWalking", false);
         }
     }
+
 }

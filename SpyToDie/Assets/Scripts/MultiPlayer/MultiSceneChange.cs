@@ -7,12 +7,12 @@ using UnityEngine.SceneManagement;
 public class MultiSceneChange : MonoBehaviour
 {
     // Start is called before the first frame update
-    public static bool hasWon;   
+    public static bool HasWon { get; set; }  
    
  
     private void Start()
     {
-
+        HasWon = false;
 
     }
     // Update is called once per frame
@@ -31,7 +31,7 @@ public class MultiSceneChange : MonoBehaviour
     public void WinCondition()
     {
 
-        if (hasWon)
+        if (HasWon)
         {
             SceneChange.hasFinished = true;
             SceneManager.LoadScene("EndScreen");

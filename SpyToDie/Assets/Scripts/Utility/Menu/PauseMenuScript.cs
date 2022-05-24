@@ -21,11 +21,13 @@ public class PauseMenuScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) && !isPaused && !DialogueManager.instance.isInDialogue && canPause)
         {
+            pauseMenu.SetActive(true);
             simpleEventPause.Invoke();
             ChangePause();
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && isPaused && pauseMenu.activeSelf)
         {
+            pauseMenu.SetActive(false);
             simpleEventUnpause.Invoke();
             ChangePause();
         }
@@ -33,6 +35,7 @@ public class PauseMenuScript : MonoBehaviour
         {
             controlsMenu.SetActive(false);
             optionsMenu.SetActive(false);
+            simpleEventUnpause.Invoke();
             canPause = true;
             isPaused = false;
         }
