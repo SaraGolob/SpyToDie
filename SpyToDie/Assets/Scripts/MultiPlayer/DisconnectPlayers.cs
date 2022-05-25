@@ -6,13 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class DisconnectPlayers : MonoBehaviour
 {
-    // Start is called before the first frame update
-
+   
+    private int maxPlayerCount = 2;
 
     // Update is called once per frame
     void Update()
     {
-        if(PhotonNetwork.CurrentRoom.PlayerCount != 2)
+        if(PhotonNetwork.CurrentRoom.PlayerCount != maxPlayerCount)
         {            
             PhotonNetwork.Disconnect();
             SceneManager.LoadScene("MainMenu");

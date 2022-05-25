@@ -10,13 +10,14 @@ public class WaitingRoomManager : MonoBehaviour
     // Start is called before the first frame update
 
     public TMP_Text roomName;
+    private int maxPlayerCount = 2;
     private void Start()
     {
         roomName.text = PhotonNetwork.CurrentRoom.Name;
     }
     void FixedUpdate()
     {
-        if (PhotonNetwork.CurrentRoom.PlayerCount == 2)
+        if (PhotonNetwork.CurrentRoom.PlayerCount == maxPlayerCount)
         {            
             SceneManager.LoadScene("MultiplayerMainScene");
         }        

@@ -7,21 +7,12 @@ using UnityEngine.SceneManagement;
 public class MultiSceneChange : MonoBehaviour
 {
     // Start is called before the first frame update
-    public static bool HasWon { get; set; }  
-   
+    private int maxPlayerCount;     
  
-    private void Start()
-    {
-        HasWon = false;
 
-    }
     // Update is called once per frame
     void Update()
-    {
-        if(PhotonNetwork.CurrentRoom.MaxPlayers>2)
-        {
-            HasWon = true;
-        }
+    {        
         LooseCondition();
         WinCondition();
     }
@@ -34,13 +25,12 @@ public class MultiSceneChange : MonoBehaviour
     }
     public void WinCondition()
     {
-
-        if (HasWon)
+        //win check
+        if (PhotonNetwork.CurrentRoom.MaxPlayers > maxPlayerCount)
         {
             SceneChange.hasFinished = true;
             PhotonNetwork.Disconnect();
             SceneManager.LoadScene("EndScreen");
         }
     }
-
 }
