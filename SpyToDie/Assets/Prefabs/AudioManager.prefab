@@ -75,3 +75,4 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  mixer: {fileID: 24300002, guid: 0531c08d8febd1547a24de989a6884df, type: 2}

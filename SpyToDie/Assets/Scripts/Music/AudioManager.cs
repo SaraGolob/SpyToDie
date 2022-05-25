@@ -6,12 +6,14 @@ public class AudioManager : MonoBehaviour
 {
     public string backgroundMusic;
     public Sound[] sounds;
+    public AudioMixerGroup mixer;
     // Start is called before the first frame update
     void Awake()
     {
         foreach(Sound s in sounds)
         {
             s.source = gameObject.AddComponent<AudioSource>();
+            s.source.outputAudioMixerGroup = mixer;
             s.source.clip = s.clip;
 
             s.source.volume = s.volume;
