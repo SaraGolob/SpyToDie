@@ -36280,7 +36280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 2010300391}
   currentTimeInMinutes: 1
-  startTimer: 30
+  startTimer: 18
   endingTime: 0
   hasPenalty: 1
   penaltySeconds: 10

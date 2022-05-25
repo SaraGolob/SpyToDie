@@ -48,6 +48,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {        
         roomInputField.text = PhotonNetwork.CurrentRoom.Name;
+        PhotonNetwork.LoadLevel("WaitingRoom");
     }
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
     {

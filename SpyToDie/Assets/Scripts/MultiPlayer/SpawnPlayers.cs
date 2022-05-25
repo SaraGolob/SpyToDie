@@ -15,9 +15,8 @@ public class SpawnPlayers : MonoBehaviour
     //Coordinates on where you can spawn on a specific place
 
     private void Start()
-    {
-        Vector3 randomPos = new Vector3(0, 0, 0);
-        PhotonNetwork.Instantiate(IDObject.name, randomPos, Quaternion.identity);
+    {        
+        PhotonNetwork.Instantiate(IDObject.name, Vector3.zero, Quaternion.identity);
         text.text = TransferableVariabels.ID;
              
         if (PhotonNetwork.NickName == "Player1")
