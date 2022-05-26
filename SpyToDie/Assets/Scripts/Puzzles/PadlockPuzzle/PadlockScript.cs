@@ -8,7 +8,8 @@ public class PadlockScript : MonoBehaviour
 {
     public Image image;
     public Sprite unlocked;
-    
+
+    [HideInInspector]  public bool IsSolved { get;  set; }
 
     public Text first, second, third, fourth;
 
@@ -24,6 +25,7 @@ public class PadlockScript : MonoBehaviour
 
         if (enteredCode == correctCode)
         {
+            IsSolved = true;
             image.sprite = unlocked;
             simpleEvent.Invoke();
         }

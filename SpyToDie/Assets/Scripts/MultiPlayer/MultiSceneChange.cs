@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class MultiSceneChange : MonoBehaviour
 {
     // Start is called before the first frame update
-    private int maxPlayerCount;     
+    private int maxPlayerCount = 2;     
  
 
     // Update is called once per frame

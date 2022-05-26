@@ -7,10 +7,11 @@ public class PadlockButton : MonoBehaviour
 {
     public Text number;
     public bool done;
+    public GameObject padLock;
 
     public void ButtonPressed()
     {
-        if (!done)
+        if (!done && !padLock.GetComponent<PadlockScript>().IsSolved)
         {
             number.text = ((int.Parse(number.text) + 1) % 10).ToString();
         }
