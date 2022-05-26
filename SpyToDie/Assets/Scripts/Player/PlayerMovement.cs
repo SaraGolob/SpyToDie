@@ -5,6 +5,8 @@ using UnityEngine.Tilemaps;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [Header("Sound")]
+    public AudioSource audioSource;
     [Header("Animation")]
     public Rigidbody2D rigidBody2D;
     public Animator animator;
@@ -46,10 +48,13 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("isWalking", true);
             animator.SetFloat("inputX", movement.x);
             animator.SetFloat("inputY", movement.y);
+            if (!audioSource.isPlaying)
+                audioSource.Play();
         }
         else
         {
             animator.SetBool("isWalking", false);
+            audioSource.Stop();
         }
     }
 }
