@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AlarmTip
   m_EditorClassIdentifier: 
   dialogueInfo:
-  - dialogue: What did you do?? What is that alarm?
+  - dialogue: What did you do?? What is that timer?
   - dialogue: Damn it ! Unlocking the computer must have triggered it! Quick you
       dont have much time left!
   - dialogue: Hey those books weren't there before! Quick go check!
