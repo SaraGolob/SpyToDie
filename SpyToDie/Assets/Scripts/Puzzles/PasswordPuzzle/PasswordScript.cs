@@ -40,8 +40,7 @@ public class PasswordScript : MonoBehaviour
     public void CheckPassword()
     {
         if (password.text == correctPassword)
-        {
-            PhotonNetwork.CurrentRoom.MaxPlayers = 3;
+        {            
             simpleEvent.Invoke();            
         }
         else
