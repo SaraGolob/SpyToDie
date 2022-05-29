@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61c4effc469693e4fb40514662c2719b, type: 3}
+  m_Name: EndHackerType
+  m_EditorClassIdentifier: 
+  dialogueInfo:
+  - dialogue: "// Build on Thu Oct 20 21:06:21 CEST 2011 for language \"en\"\r\nmyHostname
+      = window.location.hostname;\r\nvar myTLD = \".\" + myHostname.substring(myHostname.indexOf(\"wupload\")
+      + \"wupload.\".length).split(\".\")[0];\r\r\n\nfunction afterLoad() {\r\n 
+      return\r }\r\nieFixForFileSelectionOnChangeEventTimer = null;\r\n\n$(document).ajaxError(function(d,
+      c, a, b) {\r\n  CMApplication.Widgets.Dialog.close();\r\n  CMApplication.Widgets.Dialog.displayMessage(c.responseText,
+      CMApplication.Widgets.Dialog.Types.exception)\r\n});\r\njQuery.setCookie =
+      function(b, c, a) {\r\n  var d = new Date();\r\n  d.setDate(d.getDate() + a);\r\n 
+      cookieDomain = \".wupload\" + myTLD;\r\n  document.cookie = b + \"=\" + escape(c)
+      + ((a == null) ? \"\" : \";expires=\" + d.toUTCString() + \"; path=/;domain=\"
+      + cookieDomain + \";\")\r\n};\r\njQuery.getCookie = function(a) {\r\n  if (document.cookie.length
+      > 0) {\r\n    c_start = document.cookie.indexOf(a + \"=\");\r\n    if (c_start
+      != -1) {\r\n      c_start = c_start + a.length + 1;\r\n      c_end = document.cookie.indexOf(\";\",
+      c_start);\r\n      if (c_end == -1) {\r\n        c_end = document.cookie.length\r\n     
+      }\r\n      return unescape(document.cookie.substring(c_start, c_end))\r\n   
+      }\r\n  }\r\n  return \"\"\r\n};\nPRESS ENTER TO DELETE SELECTED FILES FROM
+      THE SERVER..."
