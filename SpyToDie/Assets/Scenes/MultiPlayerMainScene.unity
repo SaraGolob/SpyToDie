@@ -526,8 +526,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.4091, y: 118.7013}
-  m_SizeDelta: {x: 1115.0243, y: 558.0269}
+  m_AnchoredPosition: {x: -1.4091, y: 115}
+  m_SizeDelta: {x: 1070, y: 540}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &36318142
 MonoBehaviour:
@@ -1158,8 +1158,8 @@ Tilemap:
   - first: {x: 8, y: -4, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 51
-      m_TileSpriteIndex: 27
+      m_TileIndex: 62
+      m_TileSpriteIndex: 33
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1809,7 +1809,7 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: a9994d19acd7d854fa8b73c3ceb93deb, type: 2}
-  - m_RefCount: 18
+  - m_RefCount: 17
     m_Data: {fileID: 11400000, guid: ab8bdaf54e8bd844f852f55a9ec387b8, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 7a7be80065f91e24ba89cb2aedd8c7a8, type: 2}
@@ -1831,8 +1831,8 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 01cd0f2f25b969349938e9793c9bc13c, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 47a183a49b379a347873be208d4b3fb7, type: 2}
   - m_RefCount: 1
@@ -1910,7 +1910,7 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 3
     m_Data: {fileID: -5430291860668789627, guid: 619464feaaef18248aa2bb00a517c15f, type: 3}
-  - m_RefCount: 18
+  - m_RefCount: 17
     m_Data: {fileID: 8881750346057497324, guid: 619464feaaef18248aa2bb00a517c15f, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -1922,8 +1922,8 @@ Tilemap:
     m_Data: {fileID: 3139674285320465106, guid: 223740903cd5cda41acbcb45c438760a, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -8348945384056797398, guid: 223740903cd5cda41acbcb45c438760a, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 7739931157570736149, guid: 619464feaaef18248aa2bb00a517c15f, type: 3}
   - m_RefCount: 17
     m_Data: {fileID: 777393256234339534, guid: 619464feaaef18248aa2bb00a517c15f, type: 3}
   - m_RefCount: 1
@@ -23915,7 +23915,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0040264, y: 0.0010070801}
+  m_AnchoredPosition: {x: -5, y: -2}
   m_SizeDelta: {x: 1075.5, y: 534.69}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &679328324
@@ -36569,7 +36569,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1409053216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36698,7 +36698,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000019204, y: 118.7}
+  m_AnchoredPosition: {x: -4, y: 117}
   m_SizeDelta: {x: 1075.5, y: 534.69}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1409516548
@@ -37692,8 +37692,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.000030518}
-  m_SizeDelta: {x: 1241.2122, y: 930.9092}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1200, y: 900}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1491715680
 GameObject:
@@ -42325,6 +42325,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1891303446}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!1001 &1894081537
 PrefabInstance:
