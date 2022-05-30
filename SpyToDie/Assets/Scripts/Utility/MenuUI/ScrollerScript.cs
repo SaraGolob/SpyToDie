@@ -19,7 +19,7 @@ public class ScrollerScript : MonoBehaviour
         scrollEdge = 540f + text.preferredHeight;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         text.transform.Translate(0, scrollSpeed, 0);
 

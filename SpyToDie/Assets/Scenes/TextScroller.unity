@@ -440,7 +440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 1189330306}
-  scrollSpeed: 0.6
+  scrollSpeed: 3
   scrollEdge: 3000
 --- !u!114 &1189330306
 MonoBehaviour:
