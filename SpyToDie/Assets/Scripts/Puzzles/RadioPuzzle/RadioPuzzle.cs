@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class RadioPuzzle : MonoBehaviour
 {
-    Slider slider;
+    public Slider slider;
     private bool rightLocation;
-    DialogueScriptableObject dialogue;
+    public DialogueScriptableObject dialogue;
 
     public void CheckFrequency()
     {
@@ -15,6 +15,7 @@ public class RadioPuzzle : MonoBehaviour
         {
             if (DialogueManager.instance != null)
             {
+                gameObject.SetActive(false);
                 DialogueManager.instance.QueueDialogue(dialogue);
             }
         }

@@ -609,8 +609,8 @@ RectTransform:
   m_Father: {fileID: 1459828755}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.9, y: 0}
+  m_AnchorMax: {x: 0.9, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -661,7 +661,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 56132218}
-  - component: {fileID: 56132220}
+  - component: {fileID: 56132219}
   m_Layer: 0
   m_Name: Radio
   m_TagString: Untagged
@@ -683,7 +683,7 @@ Transform:
   m_Father: {fileID: 807893445}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &56132220
+--- !u!114 &56132219
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -692,15 +692,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 56132217}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6b3faa7f1ead8d45bc09fe783c90419, type: 3}
+  m_Script: {fileID: 11500000, guid: f6cefc2bf2be0bd4a8411062c181615d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interactRange: 1
   offset: {x: 0, y: 0}
   simpleEvent:
     m_PersistentCalls:
-      m_Calls: []
-  dialogue: {fileID: 11400000, guid: ff4d611035b1b4e489f145905ac0d1fd, type: 2}
+      m_Calls:
+      - m_Target: {fileID: 1646830991}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &58893034
 GameObject:
   m_ObjectHideFlags: 0
@@ -39393,7 +39404,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.9, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -40174,7 +40185,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1646830992
 RectTransform:
   m_ObjectHideFlags: 0
@@ -40211,6 +40222,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67759806025953643836a81fa39927ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slider: {fileID: 1529712051}
+  dialogue: {fileID: 11400000, guid: ff4d611035b1b4e489f145905ac0d1fd, type: 2}
 --- !u!1 &1666031617
 GameObject:
   m_ObjectHideFlags: 0
