@@ -29,8 +29,7 @@ public class MultiSceneChange : MonoBehaviour
         //win check
         if (PhotonNetwork.CurrentRoom.MaxPlayers > maxPlayerCount)
         {
-            SceneChange.hasFinished = true;
-            PhotonNetwork.Disconnect();
+            SceneChange.hasFinished = true;            
             SceneManager.LoadScene("EndScreen");
         }
     }
