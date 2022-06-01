@@ -41,7 +41,8 @@ public class PasswordScript : MonoBehaviour
     {
         if (password.text == correctPassword)
         {            
-            simpleEvent.Invoke();            
+            simpleEvent.Invoke();
+            FindObjectOfType<AudioManager>().Play("PuzzleCompleted");
         }
         else
         {

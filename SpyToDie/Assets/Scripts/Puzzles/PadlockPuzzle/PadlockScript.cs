@@ -28,6 +28,7 @@ public class PadlockScript : MonoBehaviour
             IsSolved = true;
             image.sprite = unlocked;
             simpleEvent.Invoke();
+            FindObjectOfType<AudioManager>().Play("PuzzleCompleted");
         }
     }
 }
