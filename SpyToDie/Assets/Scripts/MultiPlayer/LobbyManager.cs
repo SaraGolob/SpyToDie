@@ -21,8 +21,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public UnityEvent errorMessageDuplicate, errorMessageLength;
     private void Start()
     {
-        PhotonNetwork.JoinLobby();
-        
+        PhotonNetwork.JoinLobby();   
        
         
     }
@@ -65,7 +64,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
         foreach (RoomInfo room in list)
         {
-            if (room.PlayerCount < 2)
+            if (room.PlayerCount ==1)
             {
                 RoomItem newRoom = Instantiate(roomItemPrefabs, contentObject);
                 newRoom.SetRoomName(room.Name);
