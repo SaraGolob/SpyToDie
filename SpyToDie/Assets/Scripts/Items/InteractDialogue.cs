@@ -3,15 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class InteractDialogue : Interactable
+public class InteractDialogue : RangeTrigger
 {
-    public UnityEvent simpleEvent;
-    public DialogueScriptableObject dialogue;
-    public override void Interact()
+    public override void Update() //does similar thing to generic interact script except it triggers the event as soon as someone enters certain range
     {
-        if (DialogueManager.instance != null)
+        if (Input.GetKeyDown(KeyCode.E) && !PauseMenuScript.isPaused && !DialogueManager.instance.InDialogue && !DialogueManager.instance.InBuffer) //checks if player is pressing the button
         {
-            DialogueManager.instance.QueueDialogue(dialogue);
+            if ((((Vector2)transform.position + offset) - (Vector2)References.instance.playerTransform.position).sqrMagnitude < interactRange * interactRange) //bunch of math, basically checks if player is inside range
+            {
+                if (repeatThis >= 0)
+                {
+                    Interact();
+                    repeatThis--;
+                }
+                else
+                {
+                    this.enabled = false;
+                }
+            }
         }
     }
 }

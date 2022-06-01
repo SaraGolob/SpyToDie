@@ -662,6 +662,7 @@ GameObject:
   m_Component:
   - component: {fileID: 56132218}
   - component: {fileID: 56132219}
+  - component: {fileID: 56132220}
   m_Layer: 0
   m_Name: Radio
   m_TagString: Untagged
@@ -711,6 +712,61 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 392790757}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: set_PauseMovement
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 775083087}
+        m_TargetAssemblyTypeName: PauseMenuScript, Assembly-CSharp
+        m_MethodName: set_canPause
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &56132220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56132217}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6b3faa7f1ead8d45bc09fe783c90419, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactRange: 1
+  offset: {x: 0, y: 0}
+  repeatThis: 10
+  dialogue: {fileID: 11400000, guid: ff4d611035b1b4e489f145905ac0d1fd, type: 2}
+  dialogueEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &58893034
 GameObject:
@@ -931,7 +987,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1646830993}
         m_TargetAssemblyTypeName: RadioPuzzle, Assembly-CSharp
-        m_MethodName: RightLocation
+        m_MethodName: WrongLocation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -33944,7 +34000,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1646830993}
         m_TargetAssemblyTypeName: RadioPuzzle, Assembly-CSharp
-        m_MethodName: WrongLocation
+        m_MethodName: RightLocation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -39836,7 +39892,6 @@ MonoBehaviour:
   dialogueBox: {fileID: 1972839942}
   textDelay: 0.05
   dialogueFinsihed: 0
-  isInDialogue: 0
 --- !u!4 &1597307393 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4931300107415802224, guid: cf33ca443a338e74fa56b88269d9d6cd, type: 3}
@@ -40342,6 +40397,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slider: {fileID: 1529712051}
   dialogue: {fileID: 11400000, guid: ff4d611035b1b4e489f145905ac0d1fd, type: 2}
+  simpleEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 56132219}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 56132220}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &1666031617
 GameObject:
   m_ObjectHideFlags: 0

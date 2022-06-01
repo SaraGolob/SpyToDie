@@ -9,7 +9,7 @@ public class RangeTrigger : MonoBehaviour
     public DialogueScriptableObject dialogue;
     public UnityEvent dialogueEvent;
     public static RangeTrigger instance;
-    public void Update() //does similar thing to generic interact script except it triggers the event as soon as someone enters certain range
+    public virtual void Update() //does similar thing to generic interact script except it triggers the event as soon as someone enters certain range
     {
         if (repeatThis >= 0)
         {
