@@ -751,7 +751,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactRange: 1
   offset: {x: 0, y: 0}
-  repeatThis: 1
+  repeatThis: 10
   dialogue: {fileID: 11400000, guid: ff4d611035b1b4e489f145905ac0d1fd, type: 2}
   dialogueEvent:
     m_PersistentCalls:
@@ -987,7 +987,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1646830993}
         m_TargetAssemblyTypeName: RadioPuzzle, Assembly-CSharp
-        m_MethodName: RightLocation
+        m_MethodName: WrongLocation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -34000,7 +34000,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1646830993}
         m_TargetAssemblyTypeName: RadioPuzzle, Assembly-CSharp
-        m_MethodName: WrongLocation
+        m_MethodName: RightLocation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -39892,7 +39892,6 @@ MonoBehaviour:
   dialogueBox: {fileID: 1972839942}
   textDelay: 0.05
   dialogueFinsihed: 0
-  isInDialogue: 0
 --- !u!4 &1597307393 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4931300107415802224, guid: cf33ca443a338e74fa56b88269d9d6cd, type: 3}

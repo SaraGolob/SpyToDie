@@ -14,7 +14,7 @@ public class PauseMenuButton : MonoBehaviour
     // Update is called once per frame
     public void ClickPauseButton()
     {
-        if (!PauseMenuScript.isPaused && !DialogueManager.instance.isInDialogue && PauseMenuScript.canPause)
+        if (!PauseMenuScript.isPaused && !DialogueManager.instance.InDialogue && PauseMenuScript.canPause)
         {
             pauseMenu.SetActive(true);
             pause.Invoke();

@@ -19,7 +19,7 @@ public class RadioPuzzle : MonoBehaviour
             {
                 simpleEvent?.Invoke();
                 gameObject.SetActive(false);
-                //DialogueManager.instance.QueueDialogue(dialogue);
+                DialogueManager.instance.QueueDialogue(dialogue);
             }
         }
     }

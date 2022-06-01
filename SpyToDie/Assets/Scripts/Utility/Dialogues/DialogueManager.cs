@@ -15,8 +15,7 @@ public class DialogueManager : MonoBehaviour
     private bool isTyping;
     private DialogueScriptableObject currentDialogue;
     private string completeText;
-    public bool dialogueFinsihed = false;
-    public bool isInDialogue = false;   
+    public bool dialogueFinsihed = false; 
     
     void Awake()
     {
@@ -45,9 +44,8 @@ public class DialogueManager : MonoBehaviour
     }
     public void QueueDialogue(DialogueScriptableObject dialogue)
     {
-        isInDialogue = true;
-        dialogueFinsihed = false ;
-        if (InDialogue)
+        dialogueFinsihed = false;
+        if (InDialogue || InBuffer)
         {
             return;
         }
@@ -56,11 +54,6 @@ public class DialogueManager : MonoBehaviour
         InBuffer = true;
         StartCoroutine(Buffer());
         currentDialogue = dialogue;
-        //if (References.instance.playerTransform.position.y <= 0)
-        //{
-        //    dialogueBox. //if player is below 0 show text box above ?
-        //}
-
         dialogueBox.SetActive(true);
         dialogueQueue.Clear();
         foreach(DialogueScriptableObject.Info line in dialogue.dialogueInfo)
@@ -104,9 +97,6 @@ public class DialogueManager : MonoBehaviour
         InDialogue = false;
         References.instance.playerMovement.PauseMovement = false;
         dialogueFinsihed = true;
-        isInDialogue = false;
-
-
     }
     public IEnumerator Buffer()
     {

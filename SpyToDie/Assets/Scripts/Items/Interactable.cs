@@ -7,7 +7,7 @@ public class Interactable : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && !PauseMenuScript.isPaused && !DialogueManager.instance.isInDialogue) //checks if player is pressing the button
+        if (Input.GetKeyDown(KeyCode.E) && !PauseMenuScript.isPaused && !DialogueManager.instance.InDialogue) //checks if player is pressing the button
         {
             if ((((Vector2)transform.position + offset) - (Vector2)References.instance.playerTransform.position).sqrMagnitude < interactRange * interactRange) 
                 //bunch of math, basically checks if player is inside range

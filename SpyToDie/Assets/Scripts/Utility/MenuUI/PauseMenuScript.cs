@@ -19,7 +19,7 @@ public class PauseMenuScript : MonoBehaviour
     }
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && !isPaused && !DialogueManager.instance.isInDialogue && canPause)
+        if (Input.GetKeyDown(KeyCode.Escape) && !isPaused && !DialogueManager.instance.InDialogue && canPause)
         {
             pauseMenu.SetActive(true);
             simpleEventPause.Invoke();
